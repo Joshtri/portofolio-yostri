@@ -22,16 +22,21 @@ const skillsData = [
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="mb-8">
+    <section
+      id="skills"
+      className="relative mb-8 text-white p-8"
+    >
+      {/* Gradient background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-gradient"></div>
       <h2 className="text-3xl font-semibold mb-4 text-center">Skills</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="bg-gray-800 text-white rounded-lg flex flex-col items-center justify-center p-4 shadow-lg transform transition hover:scale-105"
+            className="bg-gray-800 text-white rounded-lg flex flex-col items-center justify-center p-3 shadow-lg transform transition hover:scale-105"
           >
-            <img src={skill.icon} alt={skill.name} className="w-16 h-16" />
-            <p className="mt-4 text-lg font-medium">{skill.name}</p>
+            <img src={skill.icon} alt={skill.name} className="w-12 h-12" />
+            <p className="mt-2 text-base font-medium">{skill.name}</p>
           </div>
         ))}
       </div>
