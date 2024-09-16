@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
       }
     };
 
-    const interval = setInterval(scroll, 3000); // Scroll setiap 3 detik
+    const interval = setInterval(scroll, 6000); // Scroll setiap 6 detik
 
     return () => clearInterval(interval); // Bersihkan interval saat komponen unmount
   }, []);
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
       ></video>
 
       <h2 className="text-3xl font-semibold mb-4 text-white text-center">Projects</h2>
-      <div className="overflow-hidden relative ">
+      <div className="overflow-hidden relative">
         <div ref={scrollRef} className="flex space-x-4 overflow-x-auto no-scrollbar">
           {/* Duplicate content for infinite scroll effect */}
           {[...projectsData, ...projectsData].map((project: ProjectProps, index) => (
@@ -64,6 +64,17 @@ const Projects: React.FC = () => {
                   <p className="text-gray-400 text-xs mb-2 flex-grow line-clamp-3">
                     {project.description}
                   </p>
+                  <div className="flex space-x-2 mb-2">
+                  {project.technologies?.map((tech, i) => (
+                    <img
+                      key={i}
+                      src={tech.iconUrl}
+                      alt={tech.name}
+                      title={tech.name}
+                      className="h-5 w-5"
+                    />
+                  ))}
+                  </div>
                   <a
                     href={project.link}
                     className="text-blue-400 hover:underline text-xs mt-auto focus:outline-none"
