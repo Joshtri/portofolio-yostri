@@ -1,5 +1,7 @@
 import React from 'react';
+import starsVideo from '../assets/stars.mp4';
 
+// Data for skills
 const skillsData = [
   { name: 'Node JS', icon: 'https://cdn.simpleicons.org/Node.js/5FA04E' },
   { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/javascript/F7DF1E' },
@@ -20,20 +22,28 @@ const skillsData = [
   { name: 'Bun', icon: 'https://cdn.simpleicons.org/bun/FFFFFf' },
 ];
 
+// Skills component with video background
 const Skills: React.FC = () => {
   return (
-    <section
-      id="skills"
-      className="relative mb-8 text-white p-8"
-    >
-      {/* Gradient background */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-gradient"></div>
+    <section id="skills" className="relative  text-white p-8">
+      {/* Background video */}
+      <video
+        className="absolute inset-0 object-cover w-full h-full -z-10"
+        src={starsVideo} // Path to your video file
+        autoPlay
+        muted
+        loop
+      ></video>
+
+      {/* Gradient overlay on top of video */}
+      {/* <div className="absolute inset-0 -z-5 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 opacity-75"></div> */}
+
       <h2 className="text-3xl font-semibold mb-4 text-center">Skills</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="bg-gray-800 text-white rounded-lg flex flex-col items-center justify-center p-3 shadow-lg transform transition hover:scale-105"
+            className="bg-gray-800 bg-opacity-70 text-white rounded-lg flex flex-col items-center justify-center p-3 shadow-lg transform transition hover:scale-105"
           >
             <img src={skill.icon} alt={skill.name} className="w-12 h-12" />
             <p className="mt-2 text-base font-medium">{skill.name}</p>

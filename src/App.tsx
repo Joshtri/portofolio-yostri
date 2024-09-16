@@ -12,12 +12,10 @@ function App() {
       <CustomNavbar /> {/* Use the CustomNavbar component here */}
 
       <Introduction />
-      <main className='mx-auto p-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-gradient'>
-        {/* <Biography /> */}
-        <Skills />
-        <Projects />
-        <Training />
-      </main>
+      <Skills />
+      <Projects />
+      <Training />
+
     </div>
   );
 }
