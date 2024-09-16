@@ -3,10 +3,11 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Training from './components/Training';
 import { Navbar, Button } from 'flowbite-react';
+import Introduction from './components/Introduction';
 
 function App() {
   return (
-    <div className="container mx-auto p-4">
+    <div className="mx-auto">
       <header>
         <Navbar>
           <Navbar.Brand href="#">
@@ -21,6 +22,7 @@ function App() {
         </Navbar>
       </header>
       <main>
+        <Introduction/>
         <Biography />
         <Skills />
         <Projects />

@@ -1,18 +1,23 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaReact, FaLaravel, FaBootstrap, FaGitAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiMysql } from 'react-icons/si';
 
 const skillsData = [
-  { name: 'HTML', icon: <FaHtml5 className="text-6xl text-orange-500" /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-6xl text-blue-500" /> },
-  { name: 'CSS', icon: <FaCss3Alt className="text-6xl text-blue-600" /> },
-  { name: 'Laravel', icon: <FaLaravel className="text-6xl text-red-600" /> },
-  { name: 'PHP', icon: <FaPhp className="text-6xl text-purple-500" /> },
-  { name: 'Bootstrap', icon: <FaBootstrap className="text-6xl text-purple-600" /> },
-  { name: 'JavaScript', icon: <FaJs className="text-6xl text-yellow-500" /> },
-  { name: 'MySQL', icon: <SiMysql className="text-6xl text-blue-800" /> },
-  { name: 'React', icon: <FaReact className="text-6xl text-blue-400" /> },
-  { name: 'Git', icon: <FaGitAlt className="text-6xl text-orange-700" /> },
+  { name: 'Node JS', icon: 'https://cdn.simpleicons.org/Node.js/5FA04E' },
+  { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/javascript/F7DF1E' },
+  { name: 'MongoDB', icon: 'https://cdn.simpleicons.org/mongodb/47A248' },
+  { name: 'Tailwind CSS', icon: 'https://cdn.simpleicons.org/tailwindcss/06B6D4' },
+  { name: 'MySQL', icon: 'https://cdn.simpleicons.org/mysql/4479A1' },
+  { name: 'Express', icon: 'https://cdn.simpleicons.org/express/000000' },
+  { name: 'Firebase', icon: 'https://cdn.simpleicons.org/firebase/DD2C00' },
+  { name: 'Bootstrap', icon: 'https://cdn.simpleicons.org/bootstrap/7952B3' },
+  { name: 'React', icon: 'https://cdn.simpleicons.org/react/61DAFB' },
+  { name: 'Git', icon: 'https://cdn.simpleicons.org/git/F05032' },
+  { name: 'Dotnet', icon: 'https://cdn.simpleicons.org/dotnet/512BD4' },
+  { name: 'TypeScript', icon: 'https://cdn.simpleicons.org/typescript/3178C6' },
+  { name: 'PostgreSQL', icon: 'https://cdn.simpleicons.org/postgresql/4169E1' },
+  { name: 'EJS', icon: 'https://cdn.simpleicons.org/ejs/B4CA65' },
+  { name: 'Bulma', icon: 'https://cdn.simpleicons.org/bulma/00D1B2' },
+  { name: 'DaisyUI', icon: 'https://cdn.simpleicons.org/daisyui/5A0EF8' },
+  { name: 'Bun', icon: 'https://cdn.simpleicons.org/bun/FFFFFf' },
 ];
 
 const Skills: React.FC = () => {
@@ -23,9 +28,9 @@ const Skills: React.FC = () => {
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="bg-gray-800 text-white rounded-lg flex flex-col items-center justify-center p-6 shadow-lg transform transition hover:scale-105"
+            className="bg-gray-800 text-white rounded-lg flex flex-col items-center justify-center p-4 shadow-lg transform transition hover:scale-105"
           >
-            {skill.icon}
+            <img src={skill.icon} alt={skill.name} className="w-16 h-16" />
             <p className="mt-4 text-lg font-medium">{skill.name}</p>
           </div>
         ))}
