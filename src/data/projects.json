@@ -3,25 +3,25 @@
       "title": "Web Profil Kelurahan Oetete",
       "description": "Description of Project 1.",
       "link": "[link-to-project-1]",
-      "imageUrl": "[link-to-image-1]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oetete.PNG?alt=media&token=705519bc-4c2d-4b71-82a1-d3d10b8db5cd"
     },
     {
       "title": "Web Profil Kelurahan Fontein",
       "description": "Description of Project 2.",
       "link": "[link-to-project-2]",
-      "imageUrl": "[link-to-image-2]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-fontein.PNG?alt=media&token=fb63b107-2273-4af6-802a-490f85cc41b8"
     },
     {
       "title": "Web Profil Kelurahan Oebufu",
       "description": "Description of Project 3.",
       "link": "[link-to-project-3]",
-      "imageUrl": "[link-to-image-3]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oebufu.PNG?alt=media&token=ea67c2d9-8923-467a-9a4a-2dd5d761ae7c"
     },
     {
       "title": "Sistem Informasi Verifikasi Berkas CSMS Limau Field",
       "description": "Description of Project 4.",
       "link": "[link-to-project-4]",
-      "imageUrl": "[link-to-image-4]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsiber-csms.PNG?alt=media&token=3e6d5eff-fa1e-426f-a341-64462fc2d381"
     },
     {
       "title": "Sistem Informasi Geografis Fasilitas Pendidikan Kecamatan Kelapa Lima",
@@ -33,31 +33,37 @@
       "title": "Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS berbasis Web",
       "description": "Description of Project 6.",
       "link": "[link-to-project-6]",
-      "imageUrl": "[link-to-image-6]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fspk-lp-iia.PNG?alt=media&token=718812ac-9e10-45e2-8796-b12d55913184"
     },
     {
       "title": "Litlane Book",
       "description": "Website untuk membaca buku gratis",
       "link": "[link-to-project-6]",
-      "imageUrl": "[link-to-image-6]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Flitlane-book.PNG?alt=media&token=989d447d-3988-439c-8dfe-eb67875c8fb4"
     },
     {
       "title": "To-Do List Web App",
       "description": "Description of Project 6.",
       "link": "[link-to-project-6]",
-      "imageUrl": "[link-to-image-6]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftodo-list-app.PNG?alt=media&token=30f1be25-8125-46a0-a795-b7e9fc777dfb"
     },
     {
       "title": "Top Up Game | Delta Store",
       "description": "Description of Project 6.",
       "link": "[link-to-project-6]",
-      "imageUrl": "[link-to-image-6]"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fdelta-store.PNG?alt=media&token=09cd961c-2c14-4af0-8cae-d02a2b1b3fb0"
     },
     {
       "title": "Tech Talk Blog",
       "description": "Description of Project 6.",
       "link": "[link-to-project-6]",
-      "imageUrl": "[link-to-image-6]"
-    }
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftech-talk-blog.PNG?alt=media&token=01fc1c22-df28-4413-a1af-8f22ebcf6f1e"
+    },
+    {
+        "title": "Seleksi Presentase Kelompok",
+        "description": "Description of Project 6.",
+        "link": "[link-to-project-6]",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fseleksi-app.PNG?alt=media&token=bc7267fb-6e6a-4569-a628-f0dea89bbad1"
+      }
   ]
   
