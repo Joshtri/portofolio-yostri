@@ -1,74 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { Card } from 'flowbite-react';
+import { ProjectProps } from '../types/ProjectProps';
+import projectsData from '../data/projects.json'; // Import the JSON data
+
 import './noScrollBar.css';
-
-interface ProjectProps {
-  title: string;
-  description: string;
-  link: string;
-  imageUrl: string;
-}
-
-const projects: ProjectProps[] = [
-  {
-    title: 'Web Profil Kelurahan Oetete',
-    description: 'Description of Project 1.',
-    link: '[link-to-project-1]',
-    imageUrl: '[link-to-image-1]',
-  },
-  {
-    title: 'Web Profil Kelurahan Fontein',
-    description: 'Description of Project 2.',
-    link: '[link-to-project-2]',
-    imageUrl: '[link-to-image-2]',
-  },
-  {
-    title: 'Web Profil Kelurahan Oebufu',
-    description: 'Description of Project 3.',
-    link: '[link-to-project-3]',
-    imageUrl: '[link-to-image-3]',
-  },
-  {
-    title: 'Sistem Informasi Verifikasi Berkas CSMS Limau Field',
-    description: 'Description of Project 4.',
-    link: '[link-to-project-4]',
-    imageUrl: '[link-to-image-4]',
-  },
-  {
-    title: 'Sistem Informasi Geografis Fasilitas Pendidikan Kecamatan Kelapa Lima',
-    description: 'Description of Project 5.',
-    link: '[link-to-project-5]',
-    imageUrl: '[link-to-image-5]',
-  },
-  {
-    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
-    description: 'Description of Project 6.',
-    link: '[link-to-project-6]',
-    imageUrl: '[link-to-image-6]',
-  },
-  // Tambahkan proyek lain di sini
-
-  {
-    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
-    description: 'Description of Project 6.',
-    link: '[link-to-project-6]',
-    imageUrl: '[link-to-image-6]',
-  },
-
-  {
-    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
-    description: 'Description of Project 6.',
-    link: '[link-to-project-6]',
-    imageUrl: '[link-to-image-6]',
-  },
-
-  {
-    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
-    description: 'Description of Project 6.',
-    link: '[link-to-project-6]',
-    imageUrl: '[link-to-image-6]',
-  },
-];
 
 const Projects: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -104,7 +39,7 @@ const Projects: React.FC = () => {
       <div className="overflow-hidden relative">
         <div ref={scrollRef} className="flex space-x-4 overflow-x-auto no-scrollbar">
           {/* Duplikat konten untuk memberikan efek loop */}
-          {[...projects, ...projects].map((project, index) => (
+          {[...projectsData, ...projectsData].map((project: ProjectProps, index) => (
             <div key={index} className="flex-shrink-0 w-96">
               <Card className="bg-white shadow-md rounded-lg overflow-hidden">
                 <img src={project.imageUrl} alt={project.title} className="w-full h-36 object-cover" />
