@@ -35,18 +35,39 @@ const projects: ProjectProps[] = [
     imageUrl: '[link-to-image-4]',
   },
   {
-    title: 'Project Title 5',
+    title: 'Sistem Informasi Geografis Fasilitas Pendidikan Kecamatan Kelapa Lima',
     description: 'Description of Project 5.',
     link: '[link-to-project-5]',
     imageUrl: '[link-to-image-5]',
   },
   {
-    title: 'Project Title 6',
+    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
     description: 'Description of Project 6.',
     link: '[link-to-project-6]',
     imageUrl: '[link-to-image-6]',
   },
   // Tambahkan proyek lain di sini
+
+  {
+    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
+    description: 'Description of Project 6.',
+    link: '[link-to-project-6]',
+    imageUrl: '[link-to-image-6]',
+  },
+
+  {
+    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
+    description: 'Description of Project 6.',
+    link: '[link-to-project-6]',
+    imageUrl: '[link-to-image-6]',
+  },
+
+  {
+    title: 'Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS ',
+    description: 'Description of Project 6.',
+    link: '[link-to-project-6]',
+    imageUrl: '[link-to-image-6]',
+  },
 ];
 
 const Projects: React.FC = () => {
@@ -84,7 +105,7 @@ const Projects: React.FC = () => {
         <div ref={scrollRef} className="flex space-x-4 overflow-x-auto no-scrollbar">
           {/* Duplikat konten untuk memberikan efek loop */}
           {[...projects, ...projects].map((project, index) => (
-            <div key={index} className="flex-shrink-0 w-64">
+            <div key={index} className="flex-shrink-0 w-96">
               <Card className="bg-white shadow-md rounded-lg overflow-hidden">
                 <img src={project.imageUrl} alt={project.title} className="w-full h-36 object-cover" />
                 <div className="p-3">
