@@ -31,8 +31,10 @@ const Skills: React.FC = () => {
         className="absolute inset-0 object-cover w-full h-full -z-10"
         src={starsVideo} // Path to your video file
         autoPlay
-        muted
         loop
+        muted
+        playsInline
+        preload="auto"
       ></video>
 
       {/* Gradient overlay on top of video */}
