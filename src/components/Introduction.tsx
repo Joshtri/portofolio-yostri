@@ -22,6 +22,8 @@ const Introduction: React.FC = () => {
         autoPlay
         loop
         muted
+        playsInline
+        preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src={starsVideo} type="video/mp4" />
