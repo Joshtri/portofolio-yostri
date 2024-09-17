@@ -1,0 +1,15 @@
+/* styles.css or similar */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Light gray background */
+    border-radius: 50%;
+    border-top: 8px solid #3498db; /* Blue color */
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+  }
+  

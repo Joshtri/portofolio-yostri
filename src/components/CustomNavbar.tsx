@@ -34,7 +34,7 @@ const CustomNavbar: React.FC = () => {
   return (
     <header className="fixed w-full top-0 z-50">
       <Navbar className="bg-gradient-to-r from-gray-900 to-gray-700">
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <span className="text-2xl font-bold text-white">My Portfolio</span>
         </Navbar.Brand>
         <Navbar.Collapse>

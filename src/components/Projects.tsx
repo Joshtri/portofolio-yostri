@@ -3,7 +3,7 @@ import { Card } from 'flowbite-react';
 import { ProjectProps } from '../types/ProjectProps';
 import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';
-import './aurora.css';
+// import './aurora.css';
 import starsVideo from '../assets/stars.mp4';
 import { FaProjectDiagram } from "react-icons/fa";
 
