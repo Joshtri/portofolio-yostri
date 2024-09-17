@@ -5,6 +5,10 @@ import Projects from './components/Projects';
 import Training from './components/Training';
 import Introduction from './components/Introduction';
 import CustomNavbar from './components/CustomNavbar'; // Import the new Navbar component
+import Education from './components/Education';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -15,6 +19,12 @@ function App() {
       <Skills />
       <Projects />
       <Training />
+      <Education/>
+      <ContactUs/>
+
+
+      <Footer/>
+      
 
     </div>
   );
