@@ -2,7 +2,7 @@
     {
       "title": "Web Profil Kelurahan Oetete",
       "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan sumber daya komunitas.",
-      "link": "[link-to-project-1]",
+      "link": "https://weboetete.kupangkota.go.id",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oetete.PNG?alt=media&token=705519bc-4c2d-4b71-82a1-d3d10b8db5cd",
       "technologies": [
         {
@@ -30,7 +30,7 @@
     {
       "title": "Web Profil Kelurahan Fontein",
       "description": "Situs web interaktif untuk Kelurahan Fontein, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
-      "link": "[link-to-project-2]",
+      "link": "https://webfontein.kupangkota.go.id",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-fontein.PNG?alt=media&token=fb63b107-2273-4af6-802a-490f85cc41b8",
       "technologies": [
         {
@@ -58,7 +58,7 @@
     {
       "title": "Web Profil Kelurahan Oebufu",
       "description": "Situs informatif untuk Kelurahan Oebufu, menyediakan berita terbaru, kalender acara, dan e-layanan untuk warga.",
-      "link": "[link-to-project-3]",
+      "link": "https://weboebufu.kupangkota.go.id",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oebufu.PNG?alt=media&token=ea67c2d9-8923-467a-9a4a-2dd5d761ae7c",
       "technologies": [
         {
@@ -86,7 +86,7 @@
     {
       "title": "Sistem Informasi Verifikasi Berkas CSMS Limau Field",
       "description": "Sistem untuk verifikasi berkas terkait CSMS di Limau Field, membantu memastikan kepatuhan dengan standar keselamatan.",
-      "link": "[link-to-project-4]",
+      "link": "https://siber-csms-v44.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsiber-csms.PNG?alt=media&token=3e6d5eff-fa1e-426f-a341-64462fc2d381",
       "technologies": [
         {
@@ -142,7 +142,7 @@
     {
       "title": "Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS berbasis Web",
       "description": "Sistem berbasis web untuk membantu keputusan pembebasan bersyarat dengan metode TOPSIS.",
-      "link": "[link-to-project-6]",
+      "link": "https://spk-lp-iia.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fspk-lp-iia.PNG?alt=media&token=718812ac-9e10-45e2-8796-b12d55913184",
       "technologies": [
         {
@@ -170,7 +170,7 @@
     {
       "title": "Litlane Book",
       "description": "Website untuk membaca buku gratis dengan berbagai genre untuk meningkatkan literasi.",
-      "link": "[link-to-project-6]",
+      "link": "https://litlane-book-app.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Flitlane-book.PNG?alt=media&token=989d447d-3988-439c-8dfe-eb67875c8fb4",
       "technologies": [
         {
@@ -198,7 +198,7 @@
     {
       "title": "To-Do List Web App",
       "description": "Aplikasi web untuk mengelola tugas harian dan meningkatkan produktivitas.",
-      "link": "[link-to-project-6]",
+      "link": "https://to-do-list-bs.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftodo-list-app.PNG?alt=media&token=30f1be25-8125-46a0-a795-b7e9fc777dfb",
       "technologies": [
         {
@@ -226,7 +226,7 @@
     {
       "title": "Top Up Game | Delta Store",
       "description": "Platform untuk top up game dengan cepat dan aman melalui Delta Store.",
-      "link": "[link-to-project-6]",
+      "link": "https://top-up-game-orcin.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fdelta-store.PNG?alt=media&token=09cd961c-2c14-4af0-8cae-d02a2b1b3fb0",
       "technologies": [
         {
@@ -254,7 +254,7 @@
     {
       "title": "Tech Talk Blog",
       "description": "Blog tentang teknologi terbaru, tutorial, dan diskusi seputar dunia teknologi.",
-      "link": "[link-to-project-6]",
+      "link": "https://tech-talk-blog-rho.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftech-talk-blog.PNG?alt=media&token=01fc1c22-df28-4413-a1af-8f22ebcf6f1e",
       "technologies": [
         {
@@ -282,7 +282,7 @@
     {
       "title": "Seleksi Presentase Kelompok",
       "description": "Aplikasi untuk seleksi dan penilaian presentasi kelompok secara efektif.",
-      "link": "[link-to-project-6]",
+      "link": "https://seleksi-random-kelompok-presentase.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fseleksi-app.PNG?alt=media&token=bc7267fb-6e6a-4569-a628-f0dea89bbad1",
       "technologies": [
         {
@@ -306,7 +306,7 @@
     {
       "title": "Web Profil Kelurahan Oeba",
       "description": "Situs web interaktif untuk Kelurahan Oeba, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
-      "link": "[link-to-project-2]",
+      "link": "https://web-profil-oeba.vercel.app",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oeba.PNG?alt=media&token=f16c47ed-f5e0-4e2a-96f9-6256c69c9d87",
       "technologies": [
         {
@@ -334,7 +334,7 @@
     {
       "title": "Web Profil Kelurahan Naioni",
       "description": "Situs web static untuk Kelurahan Naioni, dibuat sebagai program kerja KKN dengan tujuan memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
-      "link": "[link-to-project-2]",
+      "link": "https://tesamhrn.github.io/web-profil-naioni",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-naioni.PNG?alt=media&token=9e107f38-217a-46d8-a94f-c1045ab9b657",
       "technologies": [
         {

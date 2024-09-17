@@ -5,7 +5,7 @@ import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';
 // import './aurora.css';
 import starsVideo from '../assets/stars.mp4';
-import { FaProjectDiagram } from "react-icons/fa";
+import { FaEye, FaProjectDiagram,FaGithub } from "react-icons/fa";
 
 
 const Projects: React.FC = () => {
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
   }, []);
 
   return (
-    <section id="projects" className="relative p-4 text-white">
+    <section id="projects" className="relative p-6 text-white">
       {/* Background video */}
       <video
         className="absolute inset-0 object-cover w-full h-full -z-10"
@@ -83,13 +83,19 @@ const Projects: React.FC = () => {
                       />
                     ))}
                   </div>
+
+                    View Project
+                  
                   <a
                     href={project.link}
                     className="text-blue-400 hover:underline text-xs mt-auto focus:outline-none"
                   >
-                    View Project
-                  </a>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity">
+                <FaGithub className="h-10 w-10 text-white" />
+              </div>
+              </a>
                 </div>
+                {/* Hover Effect - Github Icon */}
               </Card>
             </div>
           ))}
