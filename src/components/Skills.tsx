@@ -1,5 +1,6 @@
 import React from 'react';
 import starsVideo from '../assets/stars.mp4';
+import { SiHyperskill } from "react-icons/si";
 
 // Data for skills
 const skillsData = [
@@ -40,7 +41,10 @@ const Skills: React.FC = () => {
       {/* Gradient overlay on top of video */}
       {/* <div className="absolute inset-0 -z-5 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 opacity-75"></div> */}
 
-      <h2 className="text-3xl font-semibold mb-4 text-center">Skills</h2>
+      <h2 className="text-5xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
+      <SiHyperskill className='text-5xl text-indigo-500' />
+        Skills
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {skillsData.map((skill, index) => (
           <div

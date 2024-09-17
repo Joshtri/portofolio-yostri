@@ -5,6 +5,8 @@ import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';
 import './aurora.css';
 import starsVideo from '../assets/stars.mp4';
+import { FaProjectDiagram } from "react-icons/fa";
+
 
 const Projects: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -47,7 +49,11 @@ const Projects: React.FC = () => {
         preload="auto"
       ></video>
 
-      <h2 className="text-3xl font-semibold mb-4 text-white text-center">Projects</h2>
+      <h2 className="text-5xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
+      <FaProjectDiagram className='text-5xl text-green-400' />
+
+        Projects
+      </h2>
       <div className="overflow-hidden relative">
         <div ref={scrollRef} className="flex space-x-4 overflow-x-auto no-scrollbar">
           {/* Duplicate content for infinite scroll effect */}

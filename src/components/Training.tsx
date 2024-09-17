@@ -2,6 +2,8 @@ import React from 'react';
 import { FaEye } from 'react-icons/fa'; // Importing the eye icon from React Icons
 import trainingData from '../data/training.json'; // Importing static JSON data
 import starsVideo from '../assets/stars.mp4';
+import { LiaCertificateSolid } from "react-icons/lia";
+
 
 const Training: React.FC = () => {
   return (
@@ -18,7 +20,10 @@ const Training: React.FC = () => {
       ></video>
 
       <div className="relative z-10">
-        <h2 className="text-3xl font-semibold mb-8 text-center text-white">Certificates</h2>
+      <h2 className="text-5xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
+        <LiaCertificateSolid className="text-5xl text-blue-600" /> {/* Add icon with styling */}
+        Certificates
+      </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {trainingData.map((training) => (
             <div
