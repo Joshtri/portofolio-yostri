@@ -5,7 +5,7 @@ import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';
 // import './aurora.css';
 import starsVideo from '../assets/stars.mp4';
-import { FaEye, FaProjectDiagram,FaGithub } from "react-icons/fa";
+import { FaProjectDiagram,FaGithub } from "react-icons/fa";
 
 
 const Projects: React.FC = () => {
