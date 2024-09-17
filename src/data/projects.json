@@ -302,6 +302,58 @@
           "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
         }
       ]
+    },
+    {
+      "title": "Web Profil Kelurahan Oeba",
+      "description": "Situs web interaktif untuk Kelurahan Oeba, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "link": "[link-to-project-2]",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oeba.PNG?alt=media&token=f16c47ed-f5e0-4e2a-96f9-6256c69c9d87",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        }
+      ]
+    },
+    {
+      "title": "Web Profil Kelurahan Naioni",
+      "description": "Situs web static untuk Kelurahan Naioni, dibuat sebagai program kerja KKN dengan tujuan memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "link": "[link-to-project-2]",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-naioni.PNG?alt=media&token=9e107f38-217a-46d8-a94f-c1045ab9b657",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
     }
   ]
   
