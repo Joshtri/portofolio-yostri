@@ -12,6 +12,9 @@ const ContactUs: React.FC = () => {
   };
 
   return (
+    <section id='contact'>
+
+
     <div className="relative flex flex-col items-center justify-center min-h-screen text-white">
       {/* Gradient Background */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-gray-900 via-gray-950 to-blue-900 opacity-90"></div>
@@ -48,6 +51,7 @@ const ContactUs: React.FC = () => {
         </div>
       </div>
     </div>  
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import backgroundMusic from './assets/Mille Lire Al Mese.mp3'; // Background music file
 import CustomNavbar from './components/CustomNavbar'; // Import the new Navbar component
-import Introduction from './components/Introduction';
+import Introduction from './components/Biography';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Training from './components/Training';

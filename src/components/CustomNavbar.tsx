@@ -28,6 +28,9 @@ const CustomNavbar: React.FC = () => {
     };
   }, []);
 
+  const linkStyle = "text-white px-3 py-2 rounded transition-all duration-300";
+  const activeLinkStyle = "bg-gradient-to-r from-blue-900 to-blue-700 font-semibold shadow-lg transform scale-110"; // Enlarged active link style
+
   return (
     <header className="fixed w-full top-0 z-50">
       <Navbar className="bg-gradient-to-r from-gray-900 to-gray-700">
@@ -37,35 +40,41 @@ const CustomNavbar: React.FC = () => {
         <Navbar.Collapse>
           <Navbar.Link
             href="#biography"
-            className={`text-white ${
-              activeSection === 'biography' ? 'font-bold' : ''
-            }`}
+            className={`${linkStyle} ${activeSection === 'biography' ? activeLinkStyle : ''}`}
           >
             Biography
           </Navbar.Link>
           <Navbar.Link
             href="#skills"
-            className={`text-white ${
-              activeSection === 'skills' ? 'font-bold' : ''
-            }`}
+            className={`${linkStyle} ${activeSection === 'skills' ? activeLinkStyle : ''}`}
           >
             Skills
           </Navbar.Link>
           <Navbar.Link
             href="#projects"
-            className={`text-white ${
-              activeSection === 'projects' ? 'font-bold' : ''
-            }`}
+            className={`${linkStyle} ${activeSection === 'projects' ? activeLinkStyle : ''}`}
           >
             Projects
           </Navbar.Link>
           <Navbar.Link
             href="#training"
-            className={`text-white ${
-              activeSection === 'training' ? 'font-bold' : ''
-            }`}
+            className={`${linkStyle} ${activeSection === 'training' ? activeLinkStyle : ''}`}
           >
-            Training
+            Certificates
+          </Navbar.Link>
+
+          <Navbar.Link
+            href="#education"
+            className={`${linkStyle} ${activeSection === 'education' ? activeLinkStyle : ''}`}
+          >
+            Education
+          </Navbar.Link>
+
+          <Navbar.Link
+            href="#contact"
+            className={`${linkStyle} ${activeSection === 'contact' ? activeLinkStyle : ''}`}
+          >
+            Contact
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
