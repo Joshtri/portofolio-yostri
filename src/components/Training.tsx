@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaEye } from 'react-icons/fa'; // Mengimpor ikon mata dari React Icons
-import trainingData from '../data/training.json'; // Import JSON data statis
+import { FaEye } from 'react-icons/fa'; // Importing the eye icon from React Icons
+import trainingData from '../data/training.json'; // Importing static JSON data
 import starsVideo from '../assets/stars.mp4';
 
 const Training: React.FC = () => {
@@ -8,8 +8,8 @@ const Training: React.FC = () => {
     <section id="training" className="relative pb-10 p-10">
       {/* Background video */}
       <video
-        className="absolute inset-0 object-cover w-full h-full -z-10 "
-        src={starsVideo} // Ganti dengan path video yang kamu gunakan
+        className="absolute inset-0 object-cover w-full h-full -z-10"
+        src={starsVideo} // Path to the video you're using
         autoPlay
         loop
         muted
@@ -25,6 +25,12 @@ const Training: React.FC = () => {
               key={training.id}
               className="relative bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-lg rounded-lg p-6 transition transform hover:scale-105 hover:shadow-2xl"
             >
+              {/* Certificate Image */}
+              <img
+                src={training.image}
+                alt={training.title}
+                className="w-full h-48 object-cover rounded-md mb-4"
+              />
               <h3 className="text-2xl font-semibold mb-2">{training.title}</h3>
               <p className="text-gray-300">{training.description}</p>
 

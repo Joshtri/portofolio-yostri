@@ -1,13 +1,20 @@
 [
-    {
-      "id": 1,
-      "title": "Training Course 1",
-      "description": "Description of Training Course 1"
-    },
-    {
-      "id": 2,
-      "title": "Training Course 2",
-      "description": "Description of Training Course 2"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Frontend Development",
+    "description": "Learned advanced frontend development skills.",
+    "image": "path/to/frontend-cert.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Backend Development",
+    "description": "Gained expertise in backend services.",
+    "image": "path/to/backend-cert.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Development",
+    "description": "Mastered both frontend and backend development.",
+    "image": "path/to/fullstack-cert.jpg"
+  }
+]
