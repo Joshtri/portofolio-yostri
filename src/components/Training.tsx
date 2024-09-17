@@ -11,8 +11,10 @@ const Training: React.FC = () => {
         className="absolute inset-0 object-cover w-full h-full -z-10 "
         src={starsVideo} // Ganti dengan path video yang kamu gunakan
         autoPlay
-        muted
         loop
+        muted
+        playsInline
+        preload="auto"
       ></video>
 
       <div className="relative z-10">
