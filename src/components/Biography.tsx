@@ -4,7 +4,7 @@ import imgIntro from '../assets/87437837853.jpg';
 
 const Biography: React.FC = () => {
   const [roleIndex, setRoleIndex] = useState(0);
-  const roles = ['Frontend', 'Backend', 'Full Stack']; // Add more roles if needed
+  const roles = ['Frontend Developer', 'Backend Developer', 'Full Stack Developer']; // Add more roles if needed
 
   useEffect(() => {
     const interval = setInterval(() => {
