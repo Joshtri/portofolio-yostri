@@ -370,6 +370,54 @@
           "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
         }
       ]
+    },
+    {
+      "title": "Sistem Kelola Absensi",
+      "description": "Sistem yang dibuat untuk keperluan managemen absensi kelas dalam sebuah pelatihan dan mempermudah pemantauan kehadiran",
+      "link": "",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsistem-kelola-absen.PNG?alt=media&token=56c269c3-5aed-4c75-bd12-627d29c0134a",
+      "technologies": [
+        {
+          "name": "Unity",
+          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+        },
+        {
+          "name": ".NET",
+          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+        }
+      ]
+    },
+    {
+      "title": "Register Management System ICAFFA",
+      "description": "Sistem Register yang digunakan untuk seminar International Conference on Agriculture, Food, Forestry and Agribusiness (ICAFFA) 2024",
+      "link": "",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fregister-management.PNG?alt=media&token=14922ebf-5207-4119-9679-867b764b726f",
+      "technologies": [
+        {
+          "name": "Unity",
+          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+        },
+        {
+          "name": ".NET",
+          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+        }
+      ]
+    },
+    {
+      "title": "Pokemon List",
+      "description": "Website yang digunakan sekedarnya menampilkan data Pokemon",
+      "link": "https://pokemon-list-wine-ten.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fpokemon-list.PNG?alt=media&token=8f01fc58-d42e-404f-a1d9-013c17b6ed8e",
+      "technologies": [
+        {
+          "name": "Unity",
+          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+        },
+        {
+          "name": ".NET",
+          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+        }
+      ]
     }
   ]
   

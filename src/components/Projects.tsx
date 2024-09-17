@@ -1,43 +1,28 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { Card } from 'flowbite-react';
 import { ProjectProps } from '../types/ProjectProps';
 import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';
-// import './aurora.css';
 import starsVideo from '../assets/stars.mp4';
-import { FaProjectDiagram,FaGithub } from "react-icons/fa";
-
+import { FaProjectDiagram, FaGithub } from "react-icons/fa";
 
 const Projects: React.FC = () => {
-  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6; // Number of cards per page
 
-  useEffect(() => {
-    const scroll = () => {
-      if (scrollRef.current) {
-        // Scroll ke kanan sebesar lebar card
-        scrollRef.current.scrollBy({
-          left: 384, // Width of the card (w-96 is 384px)
-          behavior: 'smooth',
-        });
+  // Calculate total pages
+  const totalPages = Math.ceil(projectsData.length / itemsPerPage);
 
-        // Jika scroll telah mencapai setengah dari total panjang
-        if (scrollRef.current.scrollLeft >= scrollRef.current.scrollWidth / 2) {
-          // Kembali ke awal tanpa transisi
-          scrollRef.current.scrollTo({
-            left: 0,
-            behavior: 'auto',
-          });
-        }
-      }
-    };
+  // Get current page projects
+  const indexOfLastProject = currentPage * itemsPerPage;
+  const indexOfFirstProject = indexOfLastProject - itemsPerPage;
+  const currentProjects = projectsData.slice(indexOfFirstProject, indexOfLastProject);
 
-    const interval = setInterval(scroll, 6000); // Scroll setiap 6 detik
-
-    return () => clearInterval(interval); // Bersihkan interval saat komponen unmount
-  }, []);
+  // Handle pagination
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <section id="projects" className="relative p-3 text-white">
+    <section id="projects" className="relative pb-24 pt-15 p-10 text-white">
       {/* Background video */}
       <video
         className="absolute inset-0 object-cover w-full h-full -z-10"
@@ -49,55 +34,54 @@ const Projects: React.FC = () => {
         preload="auto"
       ></video>
 
-      <h2 className="text-5xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
-      <FaProjectDiagram className='text-5xl text-green-400' />
-
-        Projects
-      </h2>
-      <div className="overflow-hidden relative">
-        <div ref={scrollRef} className="flex space-x-4 overflow-x-auto no-scrollbar">
-          {/* Duplicate content for infinite scroll effect */}
-          {[...projectsData, ...projectsData].map((project: ProjectProps, index) => (
-            <div key={index} className="flex-shrink-0 w-96 bg-opacity-70">
-              <Card className="h-full flex flex-col justify-between bg-gradient-to-r from-gray-600 to-gray-900 shadow-lg rounded-lg transition transform hover:scale-95 hover:shadow-2xl border-none focus:outline-none">
+      <div className="relative z-10">
+        <h2 className="text-4xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
+          <FaProjectDiagram className='text-4xl text-green-400' />
+          Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {currentProjects.map((project: ProjectProps, index) => (
+            <div key={index} className="relative bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-lg rounded-lg p-4 transition transform hover:scale-105 hover:shadow-2xl">
+              {/* Project Image */}
+              <div className="relative overflow-hidden rounded-md mb-3">
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-48 object-contain rounded-t-lg" // Increased height to h-48
+                  className="w-full h-36 object-contain rounded-t-lg"
                 />
-                <div className="p-3 flex-grow flex flex-col">
-                  <h3 className="text-lg font-semibold mb-1 line-clamp-2 text-white">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-400 text-xs mb-2 flex-grow line-clamp-3">
-                    {project.description}
-                  </p>
-                  <div className="flex space-x-2 mb-2">
-                    {project.technologies?.map((tech, i) => (
-                      <img
-                        key={i}
-                        src={tech.iconUrl}
-                        alt={tech.name}
-                        title={tech.name}
-                        className="h-5 w-5"
-                      />
-                    ))}
-                  </div>
-
-                    {/* View Project */}
-                  
-                  <a
-                    href={project.link}
-                    className="text-blue-400 hover:underline text-xs mt-auto focus:outline-none"
-                  >
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity">
-                <FaGithub className="h-10 w-10 text-white" />
               </div>
+              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+              <p className="text-gray-300 text-sm mb-2">{project.description}</p>
+              <div className="flex space-x-2 mb-2">
+                {project.technologies?.map((tech, i) => (
+                  <img
+                    key={i}
+                    src={tech.iconUrl}
+                    alt={tech.name}
+                    title={tech.name}
+                    className="h-4 w-4"
+                  />
+                ))}
+              </div>
+
+              {/* Hover Effect - GitHub Icon */}
+              <a href={project.link} className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity">
+                <FaGithub className="h-8 w-8 text-white" />
               </a>
-                </div>
-                {/* Hover Effect - Github Icon */}
-              </Card>
             </div>
+          ))}
+        </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center mt-8">
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i + 1}
+              onClick={() => paginate(i + 1)}
+              className={`mx-1 px-3 py-1 rounded ${currentPage === i + 1 ? 'bg-green-400 text-white' : 'bg-gray-800 text-gray-400'}`}
+            >
+              {i + 1}
+            </button>
           ))}
         </div>
       </div>
