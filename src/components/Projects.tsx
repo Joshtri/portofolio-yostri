@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
   }, []);
 
   return (
-    <section id="projects" className="relative p-6 text-white">
+    <section id="projects" className="relative p-3 text-white">
       {/* Background video */}
       <video
         className="absolute inset-0 object-cover w-full h-full -z-10"

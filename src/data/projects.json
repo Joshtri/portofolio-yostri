@@ -354,6 +354,22 @@
           "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
+    },
+    {
+      "title": "Mbul's Adventure",
+      "description": "Game Arcade, dibuat saat tugas perkuliahan semester 4.",
+      "link": "https://itch.io/e/10612624/chipset-unc-updated-mbuls-adventure",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fmbul-adventures.png?alt=media&token=58c5bf99-aae4-453a-9926-e1b8b652cade",
+      "technologies": [
+        {
+          "name": "Unity",
+          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+        },
+        {
+          "name": ".NET",
+          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+        }
+      ]
     }
   ]
   
