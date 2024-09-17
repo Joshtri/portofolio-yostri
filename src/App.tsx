@@ -1,5 +1,5 @@
-import React from 'react';
-import Biography from './components/Biography';
+// import React from 'react';
+// import Biography from './components/Biography';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Training from './components/Training';
