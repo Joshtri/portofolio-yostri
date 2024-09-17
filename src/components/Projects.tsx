@@ -53,11 +53,11 @@ const Projects: React.FC = () => {
           {/* Duplicate content for infinite scroll effect */}
           {[...projectsData, ...projectsData].map((project: ProjectProps, index) => (
             <div key={index} className="flex-shrink-0 w-96 bg-opacity-70">
-              <Card className="h-full flex flex-col justify-between bg-gradient-to-r from-gray-600 to-gray-900 shadow-lg rounded-lg transition transform hover:scale-95 hover:shadow-2xl border-none focus:outline-none ">
+              <Card className="h-full flex flex-col justify-between bg-gradient-to-r from-gray-600 to-gray-900 shadow-lg rounded-lg transition transform hover:scale-95 hover:shadow-2xl border-none focus:outline-none">
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-36 object-cover rounded-t-lg"
+                  className="w-full h-48 object-contain rounded-t-lg" // Increased height to h-48
                 />
                 <div className="p-3 flex-grow flex flex-col">
                   <h3 className="text-lg font-semibold mb-1 line-clamp-2 text-white">
@@ -67,15 +67,15 @@ const Projects: React.FC = () => {
                     {project.description}
                   </p>
                   <div className="flex space-x-2 mb-2">
-                  {project.technologies?.map((tech, i) => (
-                    <img
-                      key={i}
-                      src={tech.iconUrl}
-                      alt={tech.name}
-                      title={tech.name}
-                      className="h-5 w-5"
-                    />
-                  ))}
+                    {project.technologies?.map((tech, i) => (
+                      <img
+                        key={i}
+                        src={tech.iconUrl}
+                        alt={tech.name}
+                        title={tech.name}
+                        className="h-5 w-5"
+                      />
+                    ))}
                   </div>
                   <a
                     href={project.link}
