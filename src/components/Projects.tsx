@@ -41,8 +41,10 @@ const Projects: React.FC = () => {
         className="absolute inset-0 object-cover w-full h-full -z-10"
         src={starsVideo} // Replace with the path to your video file
         autoPlay
-        muted
         loop
+        muted
+        playsInline
+        preload="auto"
       ></video>
 
       <h2 className="text-3xl font-semibold mb-4 text-white text-center">Projects</h2>
