@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Frontend Development",
-    "description": "Learned advanced frontend development skills.",
-    "image": "path/to/frontend-cert.jpg"
+    "title": "Web Development 2024 Bootcamp",
+    "description": "The Complete 2024 Web Development Bootcamp with Dr. Angela Yu",
+    "image": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/certificates%2Fsertifikat-udemy-complete-web-dev.PNG?alt=media&token=6b99fee6-a41b-45ca-a323-d890a3e7b8ef"
   },
   {
     "id": 2,
-    "title": "Backend Development",
-    "description": "Gained expertise in backend services.",
-    "image": "path/to/backend-cert.jpg"
+    "title": "Fundamental Python",
+    "description": "",
+    "image": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/certificates%2Fsertifikat-kursus-python.PNG?alt=media&token=df32dfc2-8644-467a-9893-eaa5add2329e"
   },
   {
     "id": 3,
-    "title": "Full Stack Development",
-    "description": "Mastered both frontend and backend development.",
-    "image": "path/to/fullstack-cert.jpg"
+    "title": "Workshop Web Programming 2023",
+    "description": "",
+    "image": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/certificates%2Fsertifikat-web-pro-2023.PNG?alt=media&token=30b756df-2cce-468c-ab92-f9b9f2bbd42a"
   }
 ]

@@ -5,7 +5,7 @@ import starsVideo from '../assets/stars.mp4';
 
 const Training: React.FC = () => {
   return (
-    <section id="training" className="relative pb-10 p-10">
+    <section id="training" className="relative pb-24 pt-15 p-10">
       {/* Background video */}
       <video
         className="absolute inset-0 object-cover w-full h-full -z-10"
@@ -26,11 +26,13 @@ const Training: React.FC = () => {
               className="relative bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-lg rounded-lg p-6 transition transform hover:scale-105 hover:shadow-2xl"
             >
               {/* Certificate Image */}
-              <img
-                src={training.image}
-                alt={training.title}
-                className="w-full h-48 object-cover rounded-md mb-4"
-              />
+              <div className="relative overflow-hidden rounded-md mb-4">
+                <img
+                  src={training.image}
+                  alt={training.title}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
               <h3 className="text-2xl font-semibold mb-2">{training.title}</h3>
               <p className="text-gray-300">{training.description}</p>
 
