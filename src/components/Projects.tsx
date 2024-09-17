@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card } from 'flowbite-react';
+// import { Card } from 'flowbite-react';
 import { ProjectProps } from '../types/ProjectProps';
 import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';

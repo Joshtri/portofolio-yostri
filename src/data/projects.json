@@ -374,32 +374,52 @@
     {
       "title": "Sistem Kelola Absensi",
       "description": "Sistem yang dibuat untuk keperluan managemen absensi kelas dalam sebuah pelatihan dan mempermudah pemantauan kehadiran",
-      "link": "",
+      "link": "#",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsistem-kelola-absen.PNG?alt=media&token=56c269c3-5aed-4c75-bd12-627d29c0134a",
       "technologies": [
         {
-          "name": "Unity",
-          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": ".NET",
-          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
     {
       "title": "Register Management System ICAFFA",
       "description": "Sistem Register yang digunakan untuk seminar International Conference on Agriculture, Food, Forestry and Agribusiness (ICAFFA) 2024",
-      "link": "",
+      "link": "#",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fregister-management.PNG?alt=media&token=14922ebf-5207-4119-9679-867b764b726f",
       "technologies": [
         {
-          "name": "Unity",
-          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": ".NET",
-          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
         }
       ]
     },
@@ -410,12 +430,48 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fpokemon-list.PNG?alt=media&token=8f01fc58-d42e-404f-a1d9-013c17b6ed8e",
       "technologies": [
         {
-          "name": "Unity",
-          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": ".NET",
-          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Wedding Invitation",
+      "description": "Undangan digital berbasis website dengan tampilan interaktif, dinamis, dan informatif",
+      "link": "https://wedding-invitation-lofi-bwv3.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fwedding-invitation.PNG?alt=media&token=c9cf6cdf-50d9-440f-a85a-40bebbd3af61",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
         }
       ]
     }
