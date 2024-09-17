@@ -6,12 +6,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oetete.PNG?alt=media&token=705519bc-4c2d-4b71-82a1-d3d10b8db5cd",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -22,12 +34,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-fontein.PNG?alt=media&token=fb63b107-2273-4af6-802a-490f85cc41b8",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -38,12 +62,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oebufu.PNG?alt=media&token=ea67c2d9-8923-467a-9a4a-2dd5d761ae7c",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -54,12 +90,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsiber-csms.PNG?alt=media&token=3e6d5eff-fa1e-426f-a341-64462fc2d381",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -67,7 +115,29 @@
       "title": "Sistem Informasi Geografis Fasilitas Pendidikan Kecamatan Kelapa Lima",
       "description": "Aplikasi SIG untuk pemetaan dan analisis fasilitas pendidikan di Kecamatan Kelapa Lima.",
       "link": "[link-to-project-5]",
-      "imageUrl": "[link-to-image-5]"
+      "imageUrl": "[link-to-image-5]",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
     },
     {
       "title": "Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS berbasis Web",
@@ -76,12 +146,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fspk-lp-iia.PNG?alt=media&token=718812ac-9e10-45e2-8796-b12d55913184",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bulma CSS",
+          "iconUrl": "https://cdn.simpleicons.org/bulma/00D1B2"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -92,12 +174,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Flitlane-book.PNG?alt=media&token=989d447d-3988-439c-8dfe-eb67875c8fb4",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -108,12 +202,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftodo-list-app.PNG?alt=media&token=30f1be25-8125-46a0-a795-b7e9fc777dfb",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -124,12 +230,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fdelta-store.PNG?alt=media&token=09cd961c-2c14-4af0-8cae-d02a2b1b3fb0",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
         },
         {
-          "name": "TailwindCSS",
-          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         }
       ]
     },
@@ -140,12 +258,24 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftech-talk-blog.PNG?alt=media&token=01fc1c22-df28-4413-a1af-8f22ebcf6f1e",
       "technologies": [
         {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
           "name": "React",
           "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
         },
         {
           "name": "TailwindCSS",
           "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
         }
       ]
     },
@@ -156,8 +286,16 @@
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fseleksi-app.PNG?alt=media&token=bc7267fb-6e6a-4569-a628-f0dea89bbad1",
       "technologies": [
         {
-          "name": "React",
-          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
         },
         {
           "name": "TailwindCSS",
