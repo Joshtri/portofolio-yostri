@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-// import { Card } from 'flowbite-react';
+import React, { useState, useEffect } from 'react';
 import { ProjectProps } from '../types/ProjectProps';
 import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';
@@ -8,7 +7,15 @@ import { FaProjectDiagram, FaGithub } from "react-icons/fa";
 
 const Projects: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true); // Loading state
   const itemsPerPage = 6; // Number of cards per page
+
+  // Simulate loading effect
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 2000); // Simulate a delay for loading
+    return () => clearTimeout(timer);
+  }, [currentPage]);
 
   // Calculate total pages
   const totalPages = Math.ceil(projectsData.length / itemsPerPage);
@@ -40,36 +47,52 @@ const Projects: React.FC = () => {
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {currentProjects.map((project: ProjectProps, index) => (
-            <div key={index} className="relative bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-lg rounded-lg p-4 transition transform hover:scale-105 hover:shadow-2xl">
-              {/* Project Image */}
-              <div className="relative overflow-hidden rounded-md mb-3">
-                <img
-                  src={project.imageUrl}
-                  alt={project.title}
-                  className="w-full h-36 object-contain rounded-t-lg"
-                />
+          {loading ? (
+            // Skeleton loading animation
+            Array.from({ length: itemsPerPage }).map((_, index) => (
+              <div key={index} className="relative bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-lg rounded-lg p-4 animate-pulse">
+                <div className="h-36 bg-gray-300 rounded mb-3"></div>
+                <div className="h-6 bg-gray-300 rounded mb-2 w-3/4"></div>
+                <div className="h-4 bg-gray-300 rounded mb-2 w-1/2"></div>
+                <div className="flex space-x-2">
+                  <div className="h-4 w-4 bg-gray-300 rounded"></div>
+                  <div className="h-4 w-4 bg-gray-300 rounded"></div>
+                  <div className="h-4 w-4 bg-gray-300 rounded"></div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-gray-300 text-sm mb-2">{project.description}</p>
-              <div className="flex space-x-2 mb-2">
-                {project.technologies?.map((tech, i) => (
+            ))
+          ) : (
+            currentProjects.map((project: ProjectProps, index) => (
+              <div key={index} className="relative bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-lg rounded-lg p-4 transition transform hover:scale-105 hover:shadow-2xl">
+                {/* Project Image */}
+                <div className="relative overflow-hidden rounded-md mb-3 h-36 flex items-center justify-center bg-gray-700">
                   <img
-                    key={i}
-                    src={tech.iconUrl}
-                    alt={tech.name}
-                    title={tech.name}
-                    className="h-4 w-4"
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="w-full h-full object-contain rounded-t-lg"
                   />
-                ))}
-              </div>
+                </div>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-gray-300 text-sm mb-2">{project.description}</p>
+                <div className="flex space-x-2 mb-2">
+                  {project.technologies?.map((tech, i) => (
+                    <img
+                      key={i}
+                      src={tech.iconUrl}
+                      alt={tech.name}
+                      title={tech.name}
+                      className="h-4 w-4"
+                    />
+                  ))}
+                </div>
 
-              {/* Hover Effect - GitHub Icon */}
-              <a href={project.link} className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity">
-                <FaGithub className="h-8 w-8 text-white" />
-              </a>
-            </div>
-          ))}
+                {/* Hover Effect - GitHub Icon */}
+                <a href={project.link} className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity">
+                  <FaGithub className="h-8 w-8 text-white" />
+                </a>
+              </div>
+            ))
+          )}
         </div>
 
         {/* Pagination */}
