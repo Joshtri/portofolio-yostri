@@ -84,7 +84,7 @@ const Projects: React.FC = () => {
                     ))}
                   </div>
 
-                    View Project
+                    {/* View Project */}
                   
                   <a
                     href={project.link}
