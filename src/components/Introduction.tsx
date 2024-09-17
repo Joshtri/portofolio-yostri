@@ -1,58 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 import starsVideo from '../assets/stars.mp4';
 import imgIntro from '../assets/87437837853.jpg';
-import backgroundMusic from '../assets/Mille Lire Al Mese.mp3'; // Background music file
 
 const Introduction: React.FC = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const roles = ['Frontend', 'Backend', 'Full Stack']; // Add more roles if needed
-
-  // Toast notification to show music information
-  const showMusicNotification = () => {
-    toast.dark(`🎵 Now Playing: 'Mille Lire Al Mese' by Enzo Orefice trio | Duration: 2:55`, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'dark',
-    });
-  };
 
   useEffect(() => {
     const interval = setInterval(() => {
       setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
     }, 2000); // Change role every 2 seconds
 
-    // Function to play audio after user interaction
-    const playAudioOnInteraction = () => {
-      const audio = new Audio(backgroundMusic);
-
-      // Attempt to play the audio
-      audio.play()
-        .then(() => {
-          showMusicNotification(); // Show toast when music starts
-        })
-        .catch((error) => {
-          console.error('Audio playback failed:', error);
-        });
-      
-      // Remove the event listener after the interaction
-      window.removeEventListener('click', playAudioOnInteraction);
-    };
-
-    // Add event listener to trigger audio playback on first user click
-    window.addEventListener('click', playAudioOnInteraction);
-
-    return () => {
-      clearInterval(interval);
-      window.removeEventListener('click', playAudioOnInteraction);
-    };
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -71,7 +30,7 @@ const Introduction: React.FC = () => {
       </video>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-center h-full px-8 sm:px-16 lg:px-32 text-white">
+      <div className="relative z-10 flex items-center justify-center h-full px-8 sm:px-16 lg:px-32 text-white" id="biography">
         <div className="flex flex-col sm:flex-row items-center space-y-8 sm:space-y-0 sm:space-x-8">
           {/* Text Section */}
           <div className="text-left max-w-lg">
@@ -115,9 +74,6 @@ const Introduction: React.FC = () => {
 
       {/* Background overlay to darken the video */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-
-      {/* Toast notifications container */}
-      <ToastContainer />
     </div>
   );
 };
