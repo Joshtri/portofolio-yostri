@@ -4,11 +4,11 @@ import imgIntro from '../assets/87437837853.jpg';
 
 const ContactUs: React.FC = () => {
   const handleSendEmail = () => {
-    window.location.href = 'mailto:your-email@example.com'; // Replace with your email
+    window.location.href = 'mailto:stuffofyos1516@gmail.com'; // Replace with your email
   };
 
   const handleWhatsAppMessage = () => {
-    window.open('https://wa.me/your-phone-number', '_blank'); // Replace with your WhatsApp number
+    window.open('https://wa.me/6285298389192', '_blank'); // Replace with your WhatsApp number
   };
 
   return (
