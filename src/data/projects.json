@@ -56,6 +56,35 @@
       ]
     },
     {
+      "title": "Publisher Yayasan Sirih Pinang Kebaikan",
+      "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi",
+      "link": "https://yayasan-sirih-pinang-kebaikan.com/",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fyasipikan.PNG?alt=media&token=2dcd930b-6c31-40bc-8297-5a1f94250075",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        }
+
+      ]
+    },
+    {
       "title": "Web Profil Kelurahan Oebufu",
       "description": "Situs informatif untuk Kelurahan Oebufu, menyediakan berita terbaru, kalender acara, dan e-layanan untuk warga.",
       "link": "https://weboebufu.kupangkota.go.id",
