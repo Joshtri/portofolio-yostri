@@ -30,6 +30,47 @@ import codeTyper from '../assets/projects/code-typer.png';
 const projectsData = [ 
 
     {
+      "title": "Sistem Informasi Pendataan Jemaat Gereja Kemah Ibadat Airnona",
+      "description": "Mengembangkan sistem berbasis web untuk mengelola data jemaat, merampingkan administrasi catatan dan riwayat anggota.",
+      "link": "#",
+      "imageUrl": '',
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MUI",
+          "iconUrl": "https://cdn.simpleicons.org/mui/007FFF"
+        },
+        {
+          "name": "Refine",
+          "iconUrl": "https://cdn.simpleicons.org/refine/14141F"
+        },
+        {
+          "name": "Prisma",
+          "iconUrl": "https://cdn.simpleicons.org/prisma/2D3748"
+        },
+        {
+          "name": "postgresql",
+          "iconUrl": "https://cdn.simpleicons.org/postgresql/4169E1"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "Typescript",
+          "iconUrl": "https://cdn.simpleicons.org/typescript/3178C6"
+        }
+      ]
+    },
+
+    {
       "title": "Sistem Informasi UMKM & Web Profil Kelurahan Oetete",
       "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan umkm yang tersedia pada kelurahan",
       "link": "https://weboetete.kupangkota.go.id",
@@ -57,6 +98,7 @@ const projectsData = [
         }
       ]
     },
+    
 
     {
       "title": "Sistem Informasi UMKM & Web Profil Kelurahan Fontein",
@@ -712,34 +754,54 @@ const Projects: React.FC = () => {
             ))
           ) : (
             currentProjects.map((project: ProjectProps, index) => (
-              <div key={index} className="relative bg-gradient-to-r from-gray-600 to-gray-900 text-white shadow-lg rounded-lg p-4 transition transform hover:scale-105 hover:shadow-2xl">
-                {/* Project Image */}
-                <div className="relative overflow-hidden rounded-md mb-3 h-36 flex items-center justify-center bg-gray-700">
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className="w-full h-full object-contain rounded-t-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-gray-300 text-sm mb-2">{project.description}</p>
-                <div className="flex space-x-2 mb-2">
-                  {project.technologies?.map((tech, i) => (
-                    <img
-                      key={i}
-                      src={tech.iconUrl}
-                      alt={tech.name}
-                      title={tech.name}
-                      className="h-4 w-4"
-                    />
-                  ))}
-                </div>
+<div
+  key={index}
+  className="relative bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 text-white shadow-md rounded-lg p-4 transition transform hover:scale-105 hover:shadow-2xl group"
+>
+  {/* Project Image */}
+  <div className="relative overflow-hidden rounded-md mb-3 h-40 flex items-center justify-center bg-gray-700">
+    {project.imageUrl ? (
+      <img
+        src={project.imageUrl}
+        alt={project.title}
+        className="w-full h-full object-cover rounded-md"
+      />
+    ) : (
+      <div className="w-full h-full bg-gray-500 flex items-center justify-center">
+        <span className="text-gray-300 text-sm">No Image</span>
+      </div>
+    )}
+    {/* Hover Effect */}
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 group-hover:opacity-60 transition-opacity"
+    >
+      <FaGithub className="h-8 w-8 text-white" />
+    </a>
+  </div>
 
-                {/* Hover Effect - GitHub Icon */}
-                <a href={project.link} className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity">
-                  <FaGithub className="h-8 w-8 text-white" />
-                </a>
-              </div>
+  {/* Project Title */}
+  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+  <p className="text-gray-300 text-sm mb-3">{project.description}</p>
+
+  {/* Technologies */}
+  <div className="flex space-x-3 mb-2">
+    {project.technologies?.map((tech, i) => (
+      <div key={i} className="flex items-center space-x-1">
+        <img
+          src={tech.iconUrl}
+          alt={tech.name}
+          title={tech.name}
+          className="h-5 w-5 object-contain"
+        />
+        {/* <span className="text-xs text-gray-400">{tech.name}</span> */}
+      </div>
+    ))}
+  </div>
+</div>
+
             ))
           )}
         </div>
