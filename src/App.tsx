@@ -33,17 +33,17 @@ const App: React.FC = () => {
   };
 
   // Function to play audio
-  const playAudio = () => {
-    if (audio) {
-      audio.play()
-        .then(() => {
-          showMusicNotification(); // Show toast when music starts
-        })
-        .catch((error) => {
-          console.error('Audio playback failed:', error);
-        });
-    }
-  };
+  // const playAudio = () => {
+  //   if (audio) {
+  //     audio.play()
+  //       .then(() => {
+  //         showMusicNotification(); // Show toast when music starts
+  //       })
+  //       .catch((error) => {
+  //         console.error('Audio playback failed:', error);
+  //       });
+  //   }
+  // };
 
   useEffect(() => {
     // Create audio instance
@@ -64,19 +64,19 @@ const App: React.FC = () => {
     // Store user interaction in localStorage
     localStorage.setItem('hasInteracted', 'true');
     // Play audio
-    playAudio();
+    // playAudio();
     // Remove event listener after interaction
     window.removeEventListener('click', handleUserInteraction);
   };
 
-  useEffect(() => {
-    const hasInteracted = localStorage.getItem('hasInteracted');
+  // useEffect(() => {
+  //   const hasInteracted = localStorage.getItem('hasInteracted');
 
-    if (!hasInteracted) {
-      // Add event listener to trigger audio playback on first user click
-      window.addEventListener('click', handleUserInteraction);
-    }
-  }, [audio]);
+  //   if (!hasInteracted) {
+  //     // Add event listener to trigger audio playback on first user click
+  //     window.addEventListener('click', handleUserInteraction);
+  //   }
+  // }, [audio]);
 
   if (isLoading) {
     return <LoadingScreen />;
