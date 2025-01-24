@@ -31,8 +31,8 @@ import laundryDolphin from '../assets/projects/laundry-dolphin-kupang.png';
 const projectsData = [ 
 
     {
-      "title": "Sistem Informasi Pendataan Jemaat Gereja Kemah Ibadat Airnona",
-      "description": "Mengembangkan sistem berbasis web untuk mengelola data jemaat, merampingkan administrasi catatan dan riwayat anggota.",
+      "title": "Information System for Data Collection of Church Church Camp of Airnona",
+      "description": "Develop a web -based system to manage congregation data, streamline the administration of records and history of members.",
       "link": "#",
       "imageUrl": '',
       "technologies": [
@@ -72,8 +72,8 @@ const projectsData = [
     },
 
     {
-      "title": "Sistem Informasi UMKM & Web Profil Kelurahan Oetete",
-      "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan umkm yang tersedia pada kelurahan",
+      "title": "UMKM & Web Information System Profile of Oetete Village",
+      "description": "Website for Oetete Kelurahan with complete information about news, events, administrative services, and MSMEs available in the Kelurahan ",
       "link": "https://weboetete.kupangkota.go.id",
       "imageUrl": profilwebOetete,
       "technologies": [
@@ -102,8 +102,8 @@ const projectsData = [
     
 
     {
-      "title": "Sistem Informasi UMKM & Web Profil Kelurahan Fontein",
-      "description": "Situs web interaktif untuk Kelurahan Fontein, menyediakan data umkm yang ada pada kelurahan, prosedur administrasi, dan pengumuman.",
+      "title": "UMKM & Web Information System Fontein Village Profile ",
+      "description": "Interactive Website for Fontein Village, provides UMKM data in the village, administrative procedures, and announcements.",
       "link": "https://webfontein.kupangkota.go.id",
       "imageUrl": profilwebFontein,
       "technologies": [
@@ -132,7 +132,7 @@ const projectsData = [
 
     {
       "title": "CodeTyper - Typing Test",
-      "description": "Mengembangkan aplikasi berbasis web yang dirancang untuk menguji kecepatan pengetikan dan akurasi dengan sintaks pemrograman.Memungkinkan pengguna untuk mempraktikkan kode pengetikan cuplikan dalam bahasa pemrograman populer, meningkatkan kecepatan dan Keakraban dengan sintaks.",
+      "description": "Developing web -based applications designed to test typing speeds and accuracy with programming syntax. Allow users to practice typing code of snippets in popular programming languages, increasing speed and familiarity with syntax.",
       "link": "https://code-typer-mu.vercel.app",
       "imageUrl": codeTyper,
       "technologies": [
@@ -159,7 +159,7 @@ const projectsData = [
 
     {
       "title": "NatureCare (Wasted Bank System)",
-      "description": "Mengembangkan sistem pengelolaan limbah di mana pengguna dapat membuat akun dan memilih titik pengumpulan limbah untuk transaksi.",
+      "description": "Develop a waste management system where users can create an account and choose waste collection points for transactions.",
       "link": "https://naturecare-eco.vercel.app",
       "imageUrl": natureCare,
       "technologies": [
@@ -188,7 +188,7 @@ const projectsData = [
 
     {
       "title": "Yayasan Sirih Pinang Kebaikan",
-      "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi, Artikel, dan berita terbaru.",
+      "description": "Interactive websites that provide services to help writers and publishers in the process of publishing books and making official ISBNs, articles, and the latest news.",
       "link": "https://yayasan-sirih-pinang-kebaikan.com/",
       "imageUrl": yayasanSirihPinangKebaikan,
       "technologies": [
@@ -216,8 +216,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Sistem Informasi UMKM & Web Profil Kelurahan Oebufu",
-      "description": "Situs informatif untuk Kelurahan Oebufu, menyediakan berita terbaru, data umkm yang ada pada kelurahan, dan e-layanan untuk warga.",
+      "title": "UMKM & Web Information System Profile of Oebufu Village",
+      "description": "The informative site for Oebufu Village, provides the latest news, UMKM data in the village, and e-services for residents.",
       "link": "https://weboebufu.kupangkota.go.id",
       "imageUrl": profilwebOebufu,
       "technologies": [
@@ -244,8 +244,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Sistem Informasi Verifikasi Berkas CSMS Limau Field",
-      "description": "Sistem untuk verifikasi berkas terkait CSMS di Limau Field, membantu memastikan kepatuhan dengan standar keselamatan.",
+      "title": "CSMS Limau Field for  Verification Information System ",
+      "description": "The system for verification of the file related to CSMS in the Limau Field, helps ensure compliance with safety standards.",
       "link": "https://siber-csms-v44.vercel.app",
       "imageUrl": siberCSMS,
       "technologies": [
@@ -274,7 +274,7 @@ const projectsData = [
 
     {
       "title": "Profile Website Masjid Al Anshar Alak",
-      "description": "Mengembangkan situs web profil untuk Masjid Al Anshar Alak, termasuk acara Jadwal, pengumuman, juga sebuah artikel.",
+      "description": "Developing a website profile website for the Al Anshar Alak Mosque, including schedules, announcements, as well as an article.",
       "link": "https://masjid-al-anshar-alak.com",
       "imageUrl": masjidAlAnsharAlak,
       "technologies": [
@@ -302,8 +302,8 @@ const projectsData = [
     },
 
     {
-      "title": "Sistem Informasi Geografis Fasilitas Pendidikan Kecamatan Kelapa Lima",
-      "description": "Aplikasi SIG untuk pemetaan dan analisis fasilitas pendidikan di Kecamatan Kelapa Lima.",
+      "title": "Geographic Information System for Educational Facilities in Kelapa Lima District",
+      "description": "GIS application for mapping and analysis of educational facilities in Kelapa Lima District.",
       "link": "[link-to-project-5]",
       "imageUrl": "[link-to-image-5]",
       "technologies": [
@@ -330,8 +330,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS berbasis Web",
-      "description": "Sistem berbasis web untuk membantu keputusan pembebasan bersyarat dengan metode TOPSIS.",
+      "title": "Decision Support System for granting parole rights to prisoners with web -based topsis methods",
+      "description": "Web -based systems to help parole decisions with topsis methods.",
       "link": "https://spk-lp-iia.vercel.app",
       "imageUrl": spkLPIIA,
       "technologies": [
@@ -359,8 +359,8 @@ const projectsData = [
     },
 
     {
-      "title": "Web Bisnis Laundry Dolphin Kupang",
-      "description": "Mengembangkan web bisnis laundry untuk Laundry Dolphin Kupang, memungkinkan pelanggan untuk melakukan pemesanan melalui via whats app dan melihat profil laundry dengan layanan yang diberikan dan paket serta pricelist yang tersedia pada web.",
+      "title": "Dolphin Kupang laundry business web",
+      "description": "Developing a laundry business web for Laundry Dolphin Kupang, allows customers to place an order via via Whats App and see the laundry profile with the services provided and packages and pricelists available on the web.",
       "link": "https://laundry-dolphin.vercel.app",
       "imageUrl": laundryDolphin,
       "technologies": [
@@ -385,7 +385,7 @@ const projectsData = [
 
     {
       "title": "Litlane Book",
-      "description": "Website untuk membaca buku gratis dengan berbagai genre untuk meningkatkan literasi.",
+      "description": "Websites for reading free books with various genres to increase literacy.",
       "link": "https://litlane-book-app.vercel.app",
       "imageUrl": litlaneBook,
       "technologies": [
@@ -413,8 +413,8 @@ const projectsData = [
     },
 
     {
-      "title": "Pengisian Buku Tamu LPPM",
-      "description": "Membangun sistem buku tamu digital untuk LPPM undana untuk meningkatkan Proses perekaman data pengunjung.",
+      "title": "LPPM Guest Book Filling",
+      "description": "Build a digital guest book system for LPPM Undana to improve the recording of visitor data.",
       "link": "https://to-do-list-bs.vercel.app",
       "imageUrl": pengisianBukuTamuLPPM,
       "technologies": [
@@ -442,7 +442,7 @@ const projectsData = [
     },
     {
       "title": "To-Do List Web App",
-      "description": "Aplikasi web untuk mengelola tugas harian dan meningkatkan produktivitas.",
+      "description": "Web applications to manage daily tasks and increase productivity.",
       "link": "https://to-do-list-bs.vercel.app",
       "imageUrl": todoListApp,
       "technologies": [
@@ -470,7 +470,7 @@ const projectsData = [
     },
     {
       "title": "Top Up Game | Delta Store",
-      "description": "Platform untuk top up game dengan cepat dan aman melalui Delta Store.",
+      "description": "Platforms for top up games quickly and safely through the Delta Store.",
       "link": "https://top-up-game-orcin.vercel.app",
       "imageUrl": deltaStore,
       "technologies": [
@@ -498,7 +498,7 @@ const projectsData = [
     },
     {
       "title": "Tech Talk Blog",
-      "description": "Blog tentang teknologi terbaru, tutorial, dan diskusi seputar dunia teknologi.",
+      "description": "Blog about the latest technology, tutorials, and discussions about the world of technology.",
       "link": "https://tech-talk-blog-rho.vercel.app",
       "imageUrl": techTalkBlog,
       "technologies": [
@@ -525,8 +525,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Seleksi Presentase Kelompok",
-      "description": "Aplikasi untuk seleksi dan penilaian presentasi kelompok secara efektif.",
+      "title": "Group percentage selection",
+      "description": "Application for group presentation selection and assessment.",
       "link": "https://seleksi-random-kelompok-presentase.vercel.app",
       "imageUrl": SeleksiApp,
       "technologies": [
@@ -549,8 +549,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Web Profil Kelurahan Oeba",
-      "description": "Situs web interaktif untuk Kelurahan Oeba, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "title": "Oeba Village Profile Web",
+      "description": "The interactive website for Oeba Village, provides easy access to village information, administrative procedures, and announcements.",
       "link": "https://web-profil-oeba.vercel.app",
       "imageUrl": profilwebOeba,
       "technologies": [
@@ -577,8 +577,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Web Profil Kelurahan Naioni",
-      "description": "Situs web static untuk Kelurahan Naioni, dibuat sebagai program kerja KKN dengan tujuan memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "title": "Naioni Kelurahan Web Profile",
+      "description": "Static websites for Naioni Village, created as KKN work programs with the aim of providing easy access to village information, administrative procedures, and announcements.",
       "link": "https://tesamhrn.github.io/web-profil-naioni",
       "imageUrl": profilwebNaioni,
       "technologies": [
@@ -602,7 +602,7 @@ const projectsData = [
     },
     {
       "title": "Mbul's Adventure",
-      "description": "Game Arcade, dibuat saat tugas perkuliahan semester 4.",
+      "description": "Arcade games, made during semester 4 lecture assignments.",
       "link": "https://itch.io/e/10612624/chipset-unc-updated-mbuls-adventure",
       "imageUrl": mbulAdventures,
       "technologies": [
@@ -617,8 +617,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Sistem Kelola Absensi",
-      "description": "Sistem yang dibuat untuk keperluan managemen absensi kelas dalam sebuah pelatihan dan mempermudah pemantauan kehadiran",
+      "title": "Attendance management system",
+      "description": "The system created for the purposes of class attendance management in a training and facilitate the monitoring of attendance ",
       "link": "#",
       "imageUrl": sistemKelolaAbsen,
       "technologies": [
@@ -642,7 +642,7 @@ const projectsData = [
     },
     {
       "title": "Register Management System ICAFFA",
-      "description": "Sistem Register yang digunakan untuk seminar International Conference on Agriculture, Food, Forestry and Agribusiness (ICAFFA) 2024",
+      "description": "The register system used for the Seminar on the International Conference on Agriculture, Food, Forestry and Agribusiness (ICAFFA) 2024",
       "link": "#",
       "imageUrl": registerManagement,
       "technologies": [
@@ -670,7 +670,7 @@ const projectsData = [
     },
     {
       "title": "Pokemon List",
-      "description": "Website yang digunakan sekedarnya menampilkan data Pokemon",
+      "description": "The website used is modestly displaying Pokemon data",
       "link": "https://pokemon-list-wine-ten.vercel.app",
       "imageUrl": pokemonList,
       "technologies": [
@@ -694,7 +694,7 @@ const projectsData = [
     },
     {
       "title": "Wedding Invitation",
-      "description": "Undangan digital berbasis website dengan tampilan interaktif, dinamis, dan informatif",
+      "description": "Website -based digital invitations with an interactive, dynamic, and informative display",
       "link": "https://wedding-invitation-lofi-bwv3.vercel.app",
       "imageUrl": weddingInvitation,
       "technologies": [
