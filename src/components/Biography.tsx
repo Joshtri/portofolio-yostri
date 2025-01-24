@@ -50,7 +50,7 @@ const Biography: React.FC = () => {
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-h-screen px-8 sm:px-16 lg:px-48 py-12 text-white gap-16">
           {/* Rounded Image Section */}
           <div className="relative">
-            <div className="rounded-full overflow-hidden w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 max-w-full">
+            <div className="rounded-full overflow-hidden w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 max-w-full mt-10">
               <img
                 src={images[currentImage]}
                 alt={`Profile ${currentImage + 1}`}

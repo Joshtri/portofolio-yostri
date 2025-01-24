@@ -48,7 +48,7 @@ const CustomNavbar: React.FC = () => {
         className="bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-lg bg-opacity-90 transition-all duration-300"
       >
         <Navbar.Brand href="/">
-          <span className="text-2xl font-bold text-white hover:text-blue-400 transition-all duration-300">
+          <span className="text-xl font-bold text-white hover:text-blue-400 transition-all duration-300">
             Arpakhsad Lenggu | Portfolio
           </span>
         </Navbar.Brand>
