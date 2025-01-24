@@ -9,9 +9,8 @@ const Footer: React.FC = () => {
       {/* Content */}
       <div className="container mx-auto px-4 text-center">
         <p className="text-gray-400">
-          &copy; 2024 Yosry Lenggu. All rights reserved.
+          &copy; {new Date().getFullYear()} Yosry Lenggu. All rights reserved.
         </p>
-
       </div>
     </footer>
   );
