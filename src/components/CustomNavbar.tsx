@@ -37,17 +37,25 @@ const CustomNavbar: React.FC = () => {
     };
   }, []);
 
-  const linkStyle = "text-white px-3 py-2 rounded transition-all duration-300";
-  const activeLinkStyle = "bg-gradient-to-r from-blue-900 to-blue-700 font-semibold shadow-lg transform scale-110";
+  const linkStyle = `text-white px-4 py-3 rounded-lg transition-all duration-300 hover:text-blue-400 hover:scale-105`;
+  const activeLinkStyle = `bg-gradient-to-r from-blue-600 to-blue-400 font-semibold shadow-lg transform scale-110 text-white px-6 py-3 rounded-xl transition-all duration-300`;
 
   return (
-    <header className="fixed w-full top-0 z-50">
-      <Navbar fluid={true} rounded={true} className="bg-gradient-to-r from-gray-900 to-gray-700">
+    <header className="fixed w-full top-0 z-50 shadow-lg">
+      <Navbar
+        fluid={true}
+        rounded={true}
+        className="bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-lg bg-opacity-90 transition-all duration-300"
+      >
         <Navbar.Brand href="/">
-          <span className="text-2xl font-bold text-white">My Portfolio</span>
+          <span className="text-2xl font-bold text-white hover:text-blue-400 transition-all duration-300">
+            Arpakhsad Lenggu | Portfolio
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleNavbar} />
-        <Navbar.Collapse className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
+        <Navbar.Collapse
+          className={`md:flex items-center ${isOpen ? 'block' : 'hidden'} md:space-x-8 space-y-2 md:space-y-0`}
+        >
           <Navbar.Link
             href="#biography"
             className={`${linkStyle} ${activeSection === 'biography' ? activeLinkStyle : ''}`}
