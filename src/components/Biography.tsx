@@ -131,7 +131,7 @@ const Biography: React.FC = () => {
               {/* Send Email Button */}
               <a
                 href="mailto:stuffofyos1516@gmail.com?subject=Subject&body=Message"
-                className="flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-300"
+                className="flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-300 text-sm sm:text-base"
               >
                 <i className="mr-2">
                   <FaEnvelope />
@@ -142,7 +142,7 @@ const Biography: React.FC = () => {
               <a
                 href={cvArpakhsad}
                 download
-                className="flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300"
+                className="flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300 text-sm sm:text-base"
               >
                 <i className="mr-2">
                   <FaDownload />
