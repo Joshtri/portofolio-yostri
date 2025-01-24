@@ -1,9 +1,551 @@
 import React, { useState, useEffect } from 'react';
 import { ProjectProps } from '../types/ProjectProps';
-import projectsData from '../data/projects.json'; // Import the JSON data
+// import projectsData from '../data/projects.json'; // Import the JSON data
 import './noScrollBar.css';
 import starsVideo from '../assets/stars.mp4';
 import { FaProjectDiagram, FaGithub } from "react-icons/fa";
+
+
+
+const projectsData = [ 
+
+    {
+      "title": "Web Profil Kelurahan Oetete",
+      "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan sumber daya komunitas.",
+      "link": "https://weboetete.kupangkota.go.id",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oetete.PNG?alt=media&token=705519bc-4c2d-4b71-82a1-d3d10b8db5cd",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Web Profil Kelurahan Fontein",
+      "description": "Situs web interaktif untuk Kelurahan Fontein, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "link": "https://webfontein.kupangkota.go.id",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-fontein.PNG?alt=media&token=fb63b107-2273-4af6-802a-490f85cc41b8",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Yayasan Sirih Pinang Kebaikan",
+      "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi",
+      "link": "https://yayasan-sirih-pinang-kebaikan.com/",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fyasipikan.PNG?alt=media&token=2dcd930b-6c31-40bc-8297-5a1f94250075",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        }
+
+      ]
+    },
+    {
+      "title": "Web Profil Kelurahan Oebufu",
+      "description": "Situs informatif untuk Kelurahan Oebufu, menyediakan berita terbaru, kalender acara, dan e-layanan untuk warga.",
+      "link": "https://weboebufu.kupangkota.go.id",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oebufu.PNG?alt=media&token=ea67c2d9-8923-467a-9a4a-2dd5d761ae7c",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Sistem Informasi Verifikasi Berkas CSMS Limau Field",
+      "description": "Sistem untuk verifikasi berkas terkait CSMS di Limau Field, membantu memastikan kepatuhan dengan standar keselamatan.",
+      "link": "https://siber-csms-v44.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsiber-csms.PNG?alt=media&token=3e6d5eff-fa1e-426f-a341-64462fc2d381",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+
+    {
+      "title": "Profile Website Masjid Al Anshar Alak",
+      "description": "Developed a profile website for Masjid Al Anshar Alak, including event schedules, announcement, also an article.",
+      "link": "https://masjid-al-anshar-alak.com",
+      "imageUrl": "[link-to-image-5]",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        }
+      ]
+    },
+
+    {
+      "title": "Sistem Informasi Geografis Fasilitas Pendidikan Kecamatan Kelapa Lima",
+      "description": "Aplikasi SIG untuk pemetaan dan analisis fasilitas pendidikan di Kecamatan Kelapa Lima.",
+      "link": "[link-to-project-5]",
+      "imageUrl": "[link-to-image-5]",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS berbasis Web",
+      "description": "Sistem berbasis web untuk membantu keputusan pembebasan bersyarat dengan metode TOPSIS.",
+      "link": "https://spk-lp-iia.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fspk-lp-iia.PNG?alt=media&token=718812ac-9e10-45e2-8796-b12d55913184",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bulma CSS",
+          "iconUrl": "https://cdn.simpleicons.org/bulma/00D1B2"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Litlane Book",
+      "description": "Website untuk membaca buku gratis dengan berbagai genre untuk meningkatkan literasi.",
+      "link": "https://litlane-book-app.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Flitlane-book.PNG?alt=media&token=989d447d-3988-439c-8dfe-eb67875c8fb4",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "To-Do List Web App",
+      "description": "Aplikasi web untuk mengelola tugas harian dan meningkatkan produktivitas.",
+      "link": "https://to-do-list-bs.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftodo-list-app.PNG?alt=media&token=30f1be25-8125-46a0-a795-b7e9fc777dfb",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Top Up Game | Delta Store",
+      "description": "Platform untuk top up game dengan cepat dan aman melalui Delta Store.",
+      "link": "https://top-up-game-orcin.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fdelta-store.PNG?alt=media&token=09cd961c-2c14-4af0-8cae-d02a2b1b3fb0",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MySQL",
+          "iconUrl": "https://cdn.simpleicons.org/mysql/4479A1"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Tech Talk Blog",
+      "description": "Blog tentang teknologi terbaru, tutorial, dan diskusi seputar dunia teknologi.",
+      "link": "https://tech-talk-blog-rho.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftech-talk-blog.PNG?alt=media&token=01fc1c22-df28-4413-a1af-8f22ebcf6f1e",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        }
+      ]
+    },
+    {
+      "title": "Seleksi Presentase Kelompok",
+      "description": "Aplikasi untuk seleksi dan penilaian presentasi kelompok secara efektif.",
+      "link": "https://seleksi-random-kelompok-presentase.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fseleksi-app.PNG?alt=media&token=bc7267fb-6e6a-4569-a628-f0dea89bbad1",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        }
+      ]
+    },
+    {
+      "title": "Web Profil Kelurahan Oeba",
+      "description": "Situs web interaktif untuk Kelurahan Oeba, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "link": "https://web-profil-oeba.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oeba.PNG?alt=media&token=f16c47ed-f5e0-4e2a-96f9-6256c69c9d87",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        }
+      ]
+    },
+    {
+      "title": "Web Profil Kelurahan Naioni",
+      "description": "Situs web static untuk Kelurahan Naioni, dibuat sebagai program kerja KKN dengan tujuan memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "link": "https://tesamhrn.github.io/web-profil-naioni",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-naioni.PNG?alt=media&token=9e107f38-217a-46d8-a94f-c1045ab9b657",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Mbul's Adventure",
+      "description": "Game Arcade, dibuat saat tugas perkuliahan semester 4.",
+      "link": "https://itch.io/e/10612624/chipset-unc-updated-mbuls-adventure",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fmbul-adventures.png?alt=media&token=58c5bf99-aae4-453a-9926-e1b8b652cade",
+      "technologies": [
+        {
+          "name": "Unity",
+          "iconUrl": "https://cdn.simpleicons.org/unity/FFFFFF"
+        },
+        {
+          "name": ".NET",
+          "iconUrl": "https://cdn.simpleicons.org/dotnet/000000"
+        }
+      ]
+    },
+    {
+      "title": "Sistem Kelola Absensi",
+      "description": "Sistem yang dibuat untuk keperluan managemen absensi kelas dalam sebuah pelatihan dan mempermudah pemantauan kehadiran",
+      "link": "#",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsistem-kelola-absen.PNG?alt=media&token=56c269c3-5aed-4c75-bd12-627d29c0134a",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Register Management System ICAFFA",
+      "description": "Sistem Register yang digunakan untuk seminar International Conference on Agriculture, Food, Forestry and Agribusiness (ICAFFA) 2024",
+      "link": "#",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fregister-management.PNG?alt=media&token=14922ebf-5207-4119-9679-867b764b726f",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        }
+      ]
+    },
+    {
+      "title": "Pokemon List",
+      "description": "Website yang digunakan sekedarnya menampilkan data Pokemon",
+      "link": "https://pokemon-list-wine-ten.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fpokemon-list.PNG?alt=media&token=8f01fc58-d42e-404f-a1d9-013c17b6ed8e",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+    {
+      "title": "Wedding Invitation",
+      "description": "Undangan digital berbasis website dengan tampilan interaktif, dinamis, dan informatif",
+      "link": "https://wedding-invitation-lofi-bwv3.vercel.app",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fwedding-invitation.PNG?alt=media&token=c9cf6cdf-50d9-440f-a85a-40bebbd3af61",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        }
+      ]
+    }
+  
+];
 
 const Projects: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
