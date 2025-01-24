@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import starsVideo from '../assets/stars.mp4';
-import imgIntro1 from '../assets/87437837853.jpg'; // Gambar pertama
-import imgIntro2 from '../assets/098763537.jpg'; // Gambar kedua
+import imgIntro1 from '../assets/098763537.jpg'; // Gambar kedua
+import imgIntro2 from '../assets/87437837853.jpg'; // Gambar pertama
 import { FaDownload, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { IoLocationOutline } from "react-icons/io5";
 import './flip.css';
@@ -12,7 +12,7 @@ const Biography: React.FC = () => {
   const [animateOut, setAnimateOut] = useState(false);
   const [currentImage, setCurrentImage] = useState(0); // State untuk gambar aktif
   const roles = ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'];
-  const images = [imgIntro2, imgIntro1]; // Array gambar
+  const images = [imgIntro1, imgIntro2]; // Array gambar
 
   useEffect(() => {
     const interval = setInterval(() => {
