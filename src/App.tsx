@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
 
-import backgroundMusic from './assets/Mille Lire Al Mese.mp3'; // Background music file
+// import backgroundMusic from './assets/Mille Lire Al Mese.mp3'; // Background music file
 import CustomNavbar from './components/CustomNavbar'; // Import the new Navbar component
 import Biography from './components/Biography';
 import Skills from './components/Skills';
@@ -16,21 +16,21 @@ import LoadingScreen from './components/LoadingScreen'; // Import the LoadingScr
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+  // const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
   // Toast notification to show music information
-  const showMusicNotification = () => {
-    toast.dark(`🎵 Now Playing: 'Mille Lire Al Mese' by Enzo Orefice trio | Duration: 2:55`, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'dark',
-    });
-  };
+  // const showMusicNotification = () => {
+  //   toast.dark(`🎵 Now Playing: 'Mille Lire Al Mese' by Enzo Orefice trio | Duration: 2:55`, {
+  //     position: "top-right",
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: 'dark',
+  //   });
+  // };
 
   // Function to play audio
   // const playAudio = () => {
@@ -47,8 +47,8 @@ const App: React.FC = () => {
 
   useEffect(() => {
     // Create audio instance
-    const audioInstance = new Audio(backgroundMusic);
-    setAudio(audioInstance);
+    // const audioInstance = new Audio(backgroundMusic);
+    // setAudio(audioInstance);
 
     // Simulate loading delay
     const timer = setTimeout(() => {
