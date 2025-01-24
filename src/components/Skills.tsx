@@ -26,11 +26,11 @@ const skillsData = [
 // Skills component with video background
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="relative  text-white p-8">
+    <section id="skills" className="relative text-white p-6">
       {/* Background video */}
       <video
         className="absolute inset-0 object-cover w-full h-full -z-10"
-        src={starsVideo} // Path to your video file
+        src={starsVideo}
         autoPlay
         loop
         muted
@@ -38,21 +38,19 @@ const Skills: React.FC = () => {
         preload="auto"
       ></video>
 
-      {/* Gradient overlay on top of video */}
-      {/* <div className="absolute inset-0 -z-5 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 opacity-75"></div> */}
-
-      <h2 className="text-5xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
-      <SiHyperskill className='text-5xl text-indigo-500' />
+      <h2 className="text-3xl font-semibold mb-6 text-center flex items-center justify-center gap-2">
+        <SiHyperskill className="text-4xl text-indigo-500" />
         Skills
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="bg-gray-800 bg-opacity-70 text-white rounded-lg flex flex-col items-center justify-center p-3 shadow-lg transform transition hover:scale-105"
+            className="bg-gray-800 bg-opacity-70 text-white rounded-md flex flex-col items-center justify-center p-2 shadow-md transform transition hover:scale-105"
           >
-            <img src={skill.icon} alt={skill.name} className="w-12 h-12" />
-            <p className="mt-2 text-base font-medium">{skill.name}</p>
+            <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+            <p className="mt-1 text-sm">{skill.name}</p>
           </div>
         ))}
       </div>
