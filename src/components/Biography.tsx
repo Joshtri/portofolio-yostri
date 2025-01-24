@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import starsVideo from '../assets/stars.mp4';
-import imgIntro from '../assets/87437837853.jpg';
+import imgIntro1 from '../assets/87437837853.jpg'; // Gambar pertama
+import imgIntro2 from '../assets/098763537.jpg'; // Gambar kedua
 import { FaDownload, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { IoLocationOutline } from "react-icons/io5";
 import './flip.css';
 import cvArpakhsad from '../assets/CV - Arpakhsad Joshtri Sugiatma Lenggu (3).pdf';
-import { IoLocationOutline } from "react-icons/io5";
 
 const Biography: React.FC = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [animateOut, setAnimateOut] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0); // State untuk gambar aktif
   const roles = ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'];
+  const images = [imgIntro2, imgIntro1]; // Array gambar
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,6 +25,10 @@ const Biography: React.FC = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  const handleImageChange = (index: number) => {
+    setCurrentImage(index); // Update gambar aktif
+  };
 
   return (
     <section id="biography">
@@ -42,12 +49,26 @@ const Biography: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-h-screen px-8 sm:px-16 lg:px-48 py-12 text-white gap-16">
           {/* Rounded Image Section */}
-          <div className="rounded-full overflow-hidden w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 max-w-full">
-            <img
-              src={imgIntro}
-              alt="Profile"
-              className="object-cover w-full h-full"
-            />
+          <div className="relative">
+            <div className="rounded-full overflow-hidden w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 max-w-full">
+              <img
+                src={images[currentImage]}
+                alt={`Profile ${currentImage + 1}`}
+                className="object-cover w-full h-full"
+              />
+            </div>
+            {/* Navigation Dots */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleImageChange(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    currentImage === index ? 'bg-blue-500' : 'bg-gray-400'
+                  } transition-all duration-300`}
+                ></button>
+              ))}
+            </div>
           </div>
 
           {/* Text Section */}
@@ -73,7 +94,7 @@ const Biography: React.FC = () => {
             </p>
 
             <p className="text-base sm:text-lg md:text-xl mb-8 text-gray-300">
-            <span className="inline-block"><IoLocationOutline /></span> Based in <span className="text-green-400">Kec. Kelapa Lima, Kupang</span>
+              <span className="inline-block"><IoLocationOutline /></span> Based in <span className="text-green-400">Kec. Kelapa Lima, Kupang</span>
             </p>
             <div className="flex justify-center lg:justify-start space-x-4 mb-6">
               <a
@@ -109,24 +130,24 @@ const Biography: React.FC = () => {
             <div className="flex justify-center lg:justify-start space-x-4">
               {/* Send Email Button */}
               <a
-              href="mailto:stuffofyos1516@gmail.com?subject=Subject&body=Message"
-              className="flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-300"
+                href="mailto:stuffofyos1516@gmail.com?subject=Subject&body=Message"
+                className="flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-300"
               >
-              <i className="mr-2">
-                <FaEnvelope />
-              </i>
-              Send Email
+                <i className="mr-2">
+                  <FaEnvelope />
+                </i>
+                Send Email
               </a>
               {/* Download CV Button */}
               <a
-              href={cvArpakhsad}  // Change the link to your CV
-              download
-              className="flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300"
+                href={cvArpakhsad}
+                download
+                className="flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300"
               >
-              <i className="mr-2">
-                <FaDownload />
-              </i>
-              Download CV
+                <i className="mr-2">
+                  <FaDownload />
+                </i>
+                Download CV
               </a>
             </div>
           </div>
