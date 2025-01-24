@@ -127,11 +127,11 @@ const Biography: React.FC = () => {
             </div>
 
             {/* Buttons Section */}
-            <div className="flex justify-center lg:justify-start space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               {/* Send Email Button */}
               <a
                 href="mailto:stuffofyos1516@gmail.com?subject=Subject&body=Message"
-                className="flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-300"
+                className="flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-300"
               >
                 <i className="mr-2">
                   <FaEnvelope />
@@ -142,7 +142,7 @@ const Biography: React.FC = () => {
               <a
                 href={cvArpakhsad}
                 download
-                className="flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300"
+                className="flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-300"
               >
                 <i className="mr-2">
                   <FaDownload />
