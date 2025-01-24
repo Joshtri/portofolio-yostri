@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import backgroundMusic from './assets/Mille Lire Al Mese.mp3'; // Background music file
 import CustomNavbar from './components/CustomNavbar'; // Import the new Navbar component
-import Introduction from './components/Biography';
+import Biography from './components/Biography';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Training from './components/Training';
@@ -92,7 +92,7 @@ const App: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <Introduction />
+        <Biography />
       </motion.div>
 
       <motion.div
