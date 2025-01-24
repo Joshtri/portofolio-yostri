@@ -4,8 +4,25 @@ import { ProjectProps } from '../types/ProjectProps';
 import './noScrollBar.css';
 import starsVideo from '../assets/stars.mp4';
 import { FaProjectDiagram, FaGithub } from "react-icons/fa";
-
-
+import deltaStore from '../assets/projects/delta-store.png';
+import litlaneBook from '../assets/projects/litlane-book.png';
+import masjidAlAnsharAlak from '../assets/projects/masjid-al-anshar-alak.png';
+import mbulAdventures from '../assets/projects/mbul-adventures.png';
+import pokemonList from '../assets/projects/pokemon-list.png';
+import registerManagement from '../assets/projects/register-management.png';
+import SeleksiApp from '../assets/projects/seleksi-app.png';
+import siberCSMS from '../assets/projects/siber-csms.png';
+import sistemKelolaAbsen from '../assets/projects/sistem-kelola-absen.png';
+import spkLPIIA from '../assets/projects/spk-lp-iia.png';
+import techTalkBlog from '../assets/projects/tech-talk-blog.png';
+import todoListApp from '../assets/projects/todo-list-app.png';
+import profilwebOeba from '../assets/projects/web-profil-oeba.png';
+import profilwebNaioni from '../assets/projects/web-profil-naioni.png';
+import profilwebOebufu from '../assets/projects/web-profil-oebufu.png';
+import profilwebOetete from '../assets/projects/web-profil-oetete.png';
+import profilwebFontein from '../assets/projects/web-profil-fontein.png';
+import yayasanSirihPinangKebaikan from '../assets/projects/yasipikan.png';
+import weddingInvitation from '../assets/projects/wedding-invitation.png';
 
 const projectsData = [ 
 
@@ -13,7 +30,7 @@ const projectsData = [
       "title": "Web Profil Kelurahan Oetete",
       "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan sumber daya komunitas.",
       "link": "https://weboetete.kupangkota.go.id",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oetete.PNG?alt=media&token=705519bc-4c2d-4b71-82a1-d3d10b8db5cd",
+      "imageUrl": profilwebOetete,
       "technologies": [
         {
           "name": "Node JS",
@@ -41,7 +58,7 @@ const projectsData = [
       "title": "Web Profil Kelurahan Fontein",
       "description": "Situs web interaktif untuk Kelurahan Fontein, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
       "link": "https://webfontein.kupangkota.go.id",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-fontein.PNG?alt=media&token=fb63b107-2273-4af6-802a-490f85cc41b8",
+      "imageUrl": profilwebFontein,
       "technologies": [
         {
           "name": "Node JS",
@@ -69,7 +86,7 @@ const projectsData = [
       "title": "Yayasan Sirih Pinang Kebaikan",
       "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi",
       "link": "https://yayasan-sirih-pinang-kebaikan.com/",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fyasipikan.PNG?alt=media&token=2dcd930b-6c31-40bc-8297-5a1f94250075",
+      "imageUrl": yayasanSirihPinangKebaikan,
       "technologies": [
         {
           "name": "Node JS",
@@ -98,7 +115,7 @@ const projectsData = [
       "title": "Web Profil Kelurahan Oebufu",
       "description": "Situs informatif untuk Kelurahan Oebufu, menyediakan berita terbaru, kalender acara, dan e-layanan untuk warga.",
       "link": "https://weboebufu.kupangkota.go.id",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oebufu.PNG?alt=media&token=ea67c2d9-8923-467a-9a4a-2dd5d761ae7c",
+      "imageUrl": profilwebOebufu,
       "technologies": [
         {
           "name": "Node JS",
@@ -126,7 +143,7 @@ const projectsData = [
       "title": "Sistem Informasi Verifikasi Berkas CSMS Limau Field",
       "description": "Sistem untuk verifikasi berkas terkait CSMS di Limau Field, membantu memastikan kepatuhan dengan standar keselamatan.",
       "link": "https://siber-csms-v44.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsiber-csms.PNG?alt=media&token=3e6d5eff-fa1e-426f-a341-64462fc2d381",
+      "imageUrl": siberCSMS,
       "technologies": [
         {
           "name": "Node JS",
@@ -155,7 +172,7 @@ const projectsData = [
       "title": "Profile Website Masjid Al Anshar Alak",
       "description": "Developed a profile website for Masjid Al Anshar Alak, including event schedules, announcement, also an article.",
       "link": "https://masjid-al-anshar-alak.com",
-      "imageUrl": "[link-to-image-5]",
+      "imageUrl": masjidAlAnsharAlak,
       "technologies": [
         {
           "name": "Node JS",
@@ -212,7 +229,7 @@ const projectsData = [
       "title": "Sistem Pendukung Keputusan Pemberian Hak Pembebasan Bersyarat Kepada Narapidana dengan Metode TOPSIS berbasis Web",
       "description": "Sistem berbasis web untuk membantu keputusan pembebasan bersyarat dengan metode TOPSIS.",
       "link": "https://spk-lp-iia.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fspk-lp-iia.PNG?alt=media&token=718812ac-9e10-45e2-8796-b12d55913184",
+      "imageUrl": spkLPIIA,
       "technologies": [
         {
           "name": "Node JS",
@@ -240,7 +257,7 @@ const projectsData = [
       "title": "Litlane Book",
       "description": "Website untuk membaca buku gratis dengan berbagai genre untuk meningkatkan literasi.",
       "link": "https://litlane-book-app.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Flitlane-book.PNG?alt=media&token=989d447d-3988-439c-8dfe-eb67875c8fb4",
+      "imageUrl": litlaneBook,
       "technologies": [
         {
           "name": "Node JS",
@@ -268,7 +285,7 @@ const projectsData = [
       "title": "To-Do List Web App",
       "description": "Aplikasi web untuk mengelola tugas harian dan meningkatkan produktivitas.",
       "link": "https://to-do-list-bs.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftodo-list-app.PNG?alt=media&token=30f1be25-8125-46a0-a795-b7e9fc777dfb",
+      "imageUrl": todoListApp,
       "technologies": [
         {
           "name": "Node JS",
@@ -296,7 +313,7 @@ const projectsData = [
       "title": "Top Up Game | Delta Store",
       "description": "Platform untuk top up game dengan cepat dan aman melalui Delta Store.",
       "link": "https://top-up-game-orcin.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fdelta-store.PNG?alt=media&token=09cd961c-2c14-4af0-8cae-d02a2b1b3fb0",
+      "imageUrl": deltaStore,
       "technologies": [
         {
           "name": "Node JS",
@@ -324,7 +341,7 @@ const projectsData = [
       "title": "Tech Talk Blog",
       "description": "Blog tentang teknologi terbaru, tutorial, dan diskusi seputar dunia teknologi.",
       "link": "https://tech-talk-blog-rho.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Ftech-talk-blog.PNG?alt=media&token=01fc1c22-df28-4413-a1af-8f22ebcf6f1e",
+      "imageUrl": techTalkBlog,
       "technologies": [
         {
           "name": "Node JS",
@@ -352,7 +369,7 @@ const projectsData = [
       "title": "Seleksi Presentase Kelompok",
       "description": "Aplikasi untuk seleksi dan penilaian presentasi kelompok secara efektif.",
       "link": "https://seleksi-random-kelompok-presentase.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fseleksi-app.PNG?alt=media&token=bc7267fb-6e6a-4569-a628-f0dea89bbad1",
+      "imageUrl": SeleksiApp,
       "technologies": [
         {
           "name": "Node JS",
@@ -376,7 +393,7 @@ const projectsData = [
       "title": "Web Profil Kelurahan Oeba",
       "description": "Situs web interaktif untuk Kelurahan Oeba, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
       "link": "https://web-profil-oeba.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-oeba.PNG?alt=media&token=f16c47ed-f5e0-4e2a-96f9-6256c69c9d87",
+      "imageUrl": profilwebOeba,
       "technologies": [
         {
           "name": "Node JS",
@@ -404,7 +421,7 @@ const projectsData = [
       "title": "Web Profil Kelurahan Naioni",
       "description": "Situs web static untuk Kelurahan Naioni, dibuat sebagai program kerja KKN dengan tujuan memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
       "link": "https://tesamhrn.github.io/web-profil-naioni",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fweb-profil-naioni.PNG?alt=media&token=9e107f38-217a-46d8-a94f-c1045ab9b657",
+      "imageUrl": profilwebNaioni,
       "technologies": [
         {
           "name": "Node JS",
@@ -428,7 +445,7 @@ const projectsData = [
       "title": "Mbul's Adventure",
       "description": "Game Arcade, dibuat saat tugas perkuliahan semester 4.",
       "link": "https://itch.io/e/10612624/chipset-unc-updated-mbuls-adventure",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fmbul-adventures.png?alt=media&token=58c5bf99-aae4-453a-9926-e1b8b652cade",
+      "imageUrl": mbulAdventures,
       "technologies": [
         {
           "name": "Unity",
@@ -444,7 +461,7 @@ const projectsData = [
       "title": "Sistem Kelola Absensi",
       "description": "Sistem yang dibuat untuk keperluan managemen absensi kelas dalam sebuah pelatihan dan mempermudah pemantauan kehadiran",
       "link": "#",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fsistem-kelola-absen.PNG?alt=media&token=56c269c3-5aed-4c75-bd12-627d29c0134a",
+      "imageUrl": sistemKelolaAbsen,
       "technologies": [
         {
           "name": "Node JS",
@@ -468,7 +485,7 @@ const projectsData = [
       "title": "Register Management System ICAFFA",
       "description": "Sistem Register yang digunakan untuk seminar International Conference on Agriculture, Food, Forestry and Agribusiness (ICAFFA) 2024",
       "link": "#",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fregister-management.PNG?alt=media&token=14922ebf-5207-4119-9679-867b764b726f",
+      "imageUrl": registerManagement,
       "technologies": [
         {
           "name": "Node JS",
@@ -496,7 +513,7 @@ const projectsData = [
       "title": "Pokemon List",
       "description": "Website yang digunakan sekedarnya menampilkan data Pokemon",
       "link": "https://pokemon-list-wine-ten.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fpokemon-list.PNG?alt=media&token=8f01fc58-d42e-404f-a1d9-013c17b6ed8e",
+      "imageUrl": pokemonList,
       "technologies": [
         {
           "name": "Node JS",
@@ -520,7 +537,7 @@ const projectsData = [
       "title": "Wedding Invitation",
       "description": "Undangan digital berbasis website dengan tampilan interaktif, dinamis, dan informatif",
       "link": "https://wedding-invitation-lofi-bwv3.vercel.app",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fwedding-invitation.PNG?alt=media&token=c9cf6cdf-50d9-440f-a85a-40bebbd3af61",
+      "imageUrl": weddingInvitation,
       "technologies": [
         {
           "name": "Node JS",
