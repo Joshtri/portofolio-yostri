@@ -1,4 +1,4 @@
-[
+  [
     {
       "title": "Web Profil Kelurahan Oetete",
       "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan sumber daya komunitas.",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "title": "Publisher Yayasan Sirih Pinang Kebaikan",
+      "title": "Yayasan Sirih Pinang Kebaikan",
       "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi",
       "link": "https://yayasan-sirih-pinang-kebaikan.com/",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/bukutamuproject.appspot.com/o/projects%2Fyasipikan.PNG?alt=media&token=2dcd930b-6c31-40bc-8297-5a1f94250075",
@@ -140,6 +140,36 @@
         }
       ]
     },
+
+    {
+      "title": "Profile Website Masjid Al Anshar Alak",
+      "description": "Developed a profile website for Masjid Al Anshar Alak, including event schedules, announcement, also an article.",
+      "link": "https://masjid-al-anshar-alak.com",
+      "imageUrl": "[link-to-image-5]",
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        }
+      ]
+    },
+
     {
       "title": "Sistem Informasi Geografis Fasilitas Pendidikan Kecamatan Kelapa Lima",
       "description": "Aplikasi SIG untuk pemetaan dan analisis fasilitas pendidikan di Kecamatan Kelapa Lima.",
