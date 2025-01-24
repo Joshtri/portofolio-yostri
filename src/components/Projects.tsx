@@ -26,6 +26,7 @@ import weddingInvitation from '../assets/projects/wedding-invitation.png';
 import pengisianBukuTamuLPPM from '../assets/projects/pengisian-buku-tamu-lppm.png';
 import natureCare from '../assets/projects/nature-care.png';
 import codeTyper from '../assets/projects/code-typer.png';
+import laundryDolphin from '../assets/projects/laundry-dolphin-kupang.png';
 
 const projectsData = [ 
 
@@ -356,6 +357,32 @@ const projectsData = [
         }
       ]
     },
+
+    {
+      "title": "Web Bisnis Laundry Dolphin Kupang",
+      "description": "Mengembangkan web bisnis laundry untuk Laundry Dolphin Kupang, memungkinkan pelanggan untuk melakukan pemesanan melalui via whats app dan melihat profil laundry dengan layanan yang diberikan dan paket serta pricelist yang tersedia pada web.",
+      "link": "https://laundry-dolphin.vercel.app",
+      "imageUrl": laundryDolphin,
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+      ]
+    },
+
     {
       "title": "Litlane Book",
       "description": "Website untuk membaca buku gratis dengan berbagai genre untuk meningkatkan literasi.",
