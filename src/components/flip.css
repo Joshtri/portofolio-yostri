@@ -1,0 +1,15 @@
+.flip-transition {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .flip-out {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  
+  .flip-in {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  
