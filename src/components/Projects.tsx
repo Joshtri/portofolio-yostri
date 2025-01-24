@@ -14,7 +14,7 @@ import SeleksiApp from '../assets/projects/seleksi-app.png';
 import siberCSMS from '../assets/projects/siber-csms.png';
 import sistemKelolaAbsen from '../assets/projects/sistem-kelola-absen.png';
 import spkLPIIA from '../assets/projects/spk-lp-iia.png';
-import techTalkBlog from '../assets/projects/tech-talk-blog.png';
+import techTalkBlog from '../assets/projects/tech-talks-blog.png';
 import todoListApp from '../assets/projects/todo-list-app.png';
 import profilwebOeba from '../assets/projects/web-profil-oeba.png';
 import profilwebNaioni from '../assets/projects/web-profil-naioni.png';
@@ -23,12 +23,13 @@ import profilwebOetete from '../assets/projects/web-profil-oetete.png';
 import profilwebFontein from '../assets/projects/web-profil-fontein.png';
 import yayasanSirihPinangKebaikan from '../assets/projects/yasipikan.png';
 import weddingInvitation from '../assets/projects/wedding-invitation.png';
+import pengisianBukuTamuLPPM from '../assets/projects/pengisian-buku-tamu-lppm.png';
 
 const projectsData = [ 
 
     {
-      "title": "Web Profil Kelurahan Oetete",
-      "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan sumber daya komunitas.",
+      "title": "Sistem Informasi UMKM & Web Profil Kelurahan Oetete",
+      "description": "Situs web untuk Kelurahan Oetete dengan informasi lengkap tentang berita, acara, layanan administrasi, dan umkm yang tersedia pada kelurahan",
       "link": "https://weboetete.kupangkota.go.id",
       "imageUrl": profilwebOetete,
       "technologies": [
@@ -54,9 +55,10 @@ const projectsData = [
         }
       ]
     },
+
     {
-      "title": "Web Profil Kelurahan Fontein",
-      "description": "Situs web interaktif untuk Kelurahan Fontein, memberikan akses mudah ke informasi desa, prosedur administrasi, dan pengumuman.",
+      "title": "Sistem Informasi UMKM & Web Profil Kelurahan Fontein",
+      "description": "Situs web interaktif untuk Kelurahan Fontein, menyediakan data umkm yang ada pada kelurahan, prosedur administrasi, dan pengumuman.",
       "link": "https://webfontein.kupangkota.go.id",
       "imageUrl": profilwebFontein,
       "technologies": [
@@ -82,6 +84,36 @@ const projectsData = [
         }
       ]
     },
+
+    {
+      "title": "NatureCare (Wasted Bank System)",
+      "description": "Mengembangkan sistem pengelolaan limbah di mana pengguna dapat membuat akun dan memilih titik pengumpulan limbah untuk transaksi.",
+      "link": "https://webfontein.kupangkota.go.id",
+      "imageUrl": profilwebFontein,
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bootstrap",
+          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "EJS",
+          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+
     {
       "title": "Yayasan Sirih Pinang Kebaikan",
       "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi",
@@ -112,8 +144,8 @@ const projectsData = [
       ]
     },
     {
-      "title": "Web Profil Kelurahan Oebufu",
-      "description": "Situs informatif untuk Kelurahan Oebufu, menyediakan berita terbaru, kalender acara, dan e-layanan untuk warga.",
+      "title": "Sistem Informasi UMKM & Web Profil Kelurahan Oebufu",
+      "description": "Situs informatif untuk Kelurahan Oebufu, menyediakan berita terbaru, data umkm yang ada pada kelurahan, dan e-layanan untuk warga.",
       "link": "https://weboebufu.kupangkota.go.id",
       "imageUrl": profilwebOebufu,
       "technologies": [
@@ -170,7 +202,7 @@ const projectsData = [
 
     {
       "title": "Profile Website Masjid Al Anshar Alak",
-      "description": "Developed a profile website for Masjid Al Anshar Alak, including event schedules, announcement, also an article.",
+      "description": "Mengembangkan situs web profil untuk Masjid Al Anshar Alak, termasuk acara Jadwal, pengumuman, juga sebuah artikel.",
       "link": "https://masjid-al-anshar-alak.com",
       "imageUrl": masjidAlAnsharAlak,
       "technologies": [
@@ -278,6 +310,35 @@ const projectsData = [
         {
           "name": "EJS",
           "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+        }
+      ]
+    },
+
+    {
+      "title": "Pengisian Buku Tamu LPPM",
+      "description": "Membangun sistem buku tamu digital untuk LPPM undana untuk meningkatkan Proses perekaman data pengunjung.",
+      "link": "https://to-do-list-bs.vercel.app",
+      "imageUrl": pengisianBukuTamuLPPM,
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+        {
+          "name": "Express",
+          "iconUrl": "https://cdn.simpleicons.org/express/000000"
+        },
+        {
+          "name": "Bulma CSS",
+          "iconUrl": "https://cdn.simpleicons.org/bulma/00D1B2"
+        },
+        {
+          "name": "MongoDB",
+          "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          "name": "HBS",
+          "iconUrl": "https://cdn.simpleicons.org/handlebarsdotjs/000000"
         }
       ]
     },
