@@ -21,6 +21,8 @@ const skillsData = [
   { name: 'Bulma', icon: 'https://cdn.simpleicons.org/bulma/00D1B2' },
   { name: 'DaisyUI', icon: 'https://cdn.simpleicons.org/daisyui/5A0EF8' },
   { name: 'Bun', icon: 'https://cdn.simpleicons.org/bun/FFFFFf' },
+  { name: 'NextJS', icon: 'https://cdn.simpleicons.org/nextdotjs/ffff' },
+
 ];
 
 // Skills component with video background
