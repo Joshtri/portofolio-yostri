@@ -11,7 +11,7 @@ const Biography: React.FC = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [animateOut, setAnimateOut] = useState(false);
   const [currentImage, setCurrentImage] = useState(0); // State untuk gambar aktif
-  const roles = ['Frontend Developer', 'Backend Developer', 'Full Stack Developer'];
+  const roles = ['Frontend', 'Backend', 'Full-Stack'];
   const images = [imgIntro1, imgIntro2]; // Array gambar
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const Biography: React.FC = () => {
               </span>
             </h1>
             <h2 className="text-lg sm:text-xl md:text-2xl mb-4">
-              And I'm{' '}
+              And I'm interest in{' '}
               <span
                 className={`inline-block text-red-500 flip-transition ${
                   animateOut ? 'flip-out' : 'flip-in'
