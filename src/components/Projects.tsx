@@ -24,6 +24,8 @@ import profilwebFontein from '../assets/projects/web-profil-fontein.png';
 import yayasanSirihPinangKebaikan from '../assets/projects/yasipikan.png';
 import weddingInvitation from '../assets/projects/wedding-invitation.png';
 import pengisianBukuTamuLPPM from '../assets/projects/pengisian-buku-tamu-lppm.png';
+import natureCare from '../assets/projects/nature-care.png';
+import codeTyper from '../assets/projects/code-typer.png';
 
 const projectsData = [ 
 
@@ -86,10 +88,37 @@ const projectsData = [
     },
 
     {
+      "title": "CodeTyper - Typing Test",
+      "description": "Mengembangkan aplikasi berbasis web yang dirancang untuk menguji kecepatan pengetikan dan akurasi dengan sintaks pemrograman.Memungkinkan pengguna untuk mempraktikkan kode pengetikan cuplikan dalam bahasa pemrograman populer, meningkatkan kecepatan dan Keakraban dengan sintaks.",
+      "link": "https://code-typer-mu.vercel.app",
+      "imageUrl": codeTyper,
+      "technologies": [
+        {
+          "name": "Node JS",
+          "iconUrl": "https://cdn.simpleicons.org/Node.js/5FA04E"
+        },
+
+        {
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
+        },
+
+        {
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
+        },
+        {
+          "name": "Typescript",
+          "iconUrl": "https://cdn.simpleicons.org/typescript/3178C6"
+        }
+      ]
+    },
+
+    {
       "title": "NatureCare (Wasted Bank System)",
       "description": "Mengembangkan sistem pengelolaan limbah di mana pengguna dapat membuat akun dan memilih titik pengumpulan limbah untuk transaksi.",
-      "link": "https://webfontein.kupangkota.go.id",
-      "imageUrl": profilwebFontein,
+      "link": "https://naturecare-eco.vercel.app",
+      "imageUrl": natureCare,
       "technologies": [
         {
           "name": "Node JS",
@@ -100,23 +129,23 @@ const projectsData = [
           "iconUrl": "https://cdn.simpleicons.org/express/000000"
         },
         {
-          "name": "Bootstrap",
-          "iconUrl": "https://cdn.simpleicons.org/bootstrap/7952B3"
+          "name": "TailwindCSS",
+          "iconUrl": "https://cdn.simpleicons.org/tailwindcss/06B6D4"
         },
         {
           "name": "MongoDB",
           "iconUrl": "https://cdn.simpleicons.org/mongodb/47A248"
         },
         {
-          "name": "EJS",
-          "iconUrl": "https://cdn.simpleicons.org/ejs/B4CA65"
+          "name": "React",
+          "iconUrl": "https://cdn.simpleicons.org/react/61DAFB"
         }
       ]
     },
 
     {
       "title": "Yayasan Sirih Pinang Kebaikan",
-      "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi",
+      "description": "Situs web interaktif yang menyediakan jasa untuk membantu penulis dan penerbit dalam proses penerbitan buku serta pembuatan ISBN yang resmi, Artikel, dan berita terbaru.",
       "link": "https://yayasan-sirih-pinang-kebaikan.com/",
       "imageUrl": yayasanSirihPinangKebaikan,
       "technologies": [
