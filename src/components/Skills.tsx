@@ -26,7 +26,7 @@ const skillsData = [
 // Skills component with video background
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="relative text-white p-6">
+    <section id="skills" className="relative text-white p-6 pb-44">
       {/* Background video */}
       <video
         className="absolute inset-0 object-cover w-full h-full -z-10"
