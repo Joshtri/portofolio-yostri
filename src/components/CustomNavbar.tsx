@@ -7,9 +7,14 @@ const CustomNavbar: React.FC = () => {
 
   const toggleNavbar = () => setIsOpen(!isOpen);
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Smooth scrolling
+    }
+
     if (isOpen) {
-      setIsOpen(false);
+      setIsOpen(false); // Close navbar on mobile
     }
   };
 
@@ -37,7 +42,7 @@ const CustomNavbar: React.FC = () => {
     };
   }, []);
 
-  const linkStyle = `text-white px-4 py-3 rounded-lg transition-all duration-300 hover:text-blue-400 hover:scale-105`;
+  const linkStyle = `text-white px-4 py-3 rounded-lg transition-all duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer`; // Add `cursor-pointer` here
   const activeLinkStyle = `bg-gradient-to-r from-blue-600 to-blue-400 font-semibold shadow-lg transform scale-110 text-white px-6 py-3 rounded-xl transition-all duration-300`;
 
   return (
@@ -57,44 +62,38 @@ const CustomNavbar: React.FC = () => {
           className={`md:flex items-center ${isOpen ? 'block' : 'hidden'} md:space-x-8 space-y-2 md:space-y-0`}
         >
           <Navbar.Link
-            href="#biography"
+            onClick={() => handleLinkClick('biography')}
             className={`${linkStyle} ${activeSection === 'biography' ? activeLinkStyle : ''}`}
-            onClick={handleLinkClick}
           >
             Biography
           </Navbar.Link>
           <Navbar.Link
-            href="#skills"
+            onClick={() => handleLinkClick('skills')}
             className={`${linkStyle} ${activeSection === 'skills' ? activeLinkStyle : ''}`}
-            onClick={handleLinkClick}
           >
             Skills
           </Navbar.Link>
           <Navbar.Link
-            href="#projects"
+            onClick={() => handleLinkClick('projects')}
             className={`${linkStyle} ${activeSection === 'projects' ? activeLinkStyle : ''}`}
-            onClick={handleLinkClick}
           >
             Projects
           </Navbar.Link>
           <Navbar.Link
-            href="#training"
+            onClick={() => handleLinkClick('training')}
             className={`${linkStyle} ${activeSection === 'training' ? activeLinkStyle : ''}`}
-            onClick={handleLinkClick}
           >
             Certificates
           </Navbar.Link>
           <Navbar.Link
-            href="#education"
+            onClick={() => handleLinkClick('education')}
             className={`${linkStyle} ${activeSection === 'education' ? activeLinkStyle : ''}`}
-            onClick={handleLinkClick}
           >
             Education
           </Navbar.Link>
           <Navbar.Link
-            href="#contact"
+            onClick={() => handleLinkClick('contact')}
             className={`${linkStyle} ${activeSection === 'contact' ? activeLinkStyle : ''}`}
-            onClick={handleLinkClick}
           >
             Contact
           </Navbar.Link>
