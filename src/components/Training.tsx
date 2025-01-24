@@ -1,9 +1,81 @@
 import React from 'react';
 import { FaEye } from 'react-icons/fa'; // Importing the eye icon from React Icons
-import trainingData from '../data/training.json'; // Importing static JSON data
-import starsVideo from '../assets/stars.mp4';
 import { LiaCertificateSolid } from "react-icons/lia";
+import starsVideo from '../assets/stars.mp4';
 
+// Importing images
+import webDevCertificate from "../assets/certificates/sertifikat-udemy-complete-web-dev.png";
+import pythonCertificate from "../assets/certificates/sertifikat-kursus-python.png";
+import webProgramming2023 from "../assets/certificates/sertifikat-web-pro-2023.png";
+import webProgramming2024 from "../assets/certificates/workshop-web-programming-2024.png";
+import adsCertificate from "../assets/certificates/sertifikat-ads.png";
+import projectManagement from "../assets/certificates/sertifikat-dasar-manpro.png";
+import selfDevelopment from "../assets/certificates/sertifikat-self-development.png";
+import sqlCertificate from "../assets/certificates/sertifikat-sql.png";
+import backendJavascript from "../assets/certificates/sertifikat-backend-pemula-js.png";
+
+// Training data with images imported directly
+const trainingData = [
+  {
+    id: 1,
+    title: "Web Development 2024 Bootcamp",
+    description: "The Complete 2024 Web Development Bootcamp with Dr. Angela Yu",
+    image: webDevCertificate,
+  },
+  {
+    id: 2,
+    title: "Fundamental Python",
+    description: "",
+    image: pythonCertificate,
+  },
+  {
+    id: 3,
+    title: "Workshop Web Programming 2023",
+    description: "",
+    image: webProgramming2023,
+  },
+  {
+    id: 4,
+    title: "Workshop Web Programming 2024",
+    description: "",
+    image: webProgramming2024,
+  },
+
+  {
+    id: 5,
+    title: "Associate Data Scientist (Vocational School Graduate Academy)",
+    description: "",
+    image: adsCertificate,
+  },
+
+  {
+    id: 6,
+    title: "Belajar Dasar Manajemen Proyek",
+    description: "",
+    image: projectManagement,
+  },
+
+  {
+    id: 7,
+    title: "Belajar Strategi Pengembangan Diri",
+    description: "",
+    image: selfDevelopment,
+  },
+
+  {
+    id: 8,
+    title: "Belajar Dasar Structured Query Language (SQL)",
+    description: "",
+    image: sqlCertificate,
+  },
+
+  {
+    id: 9,
+    title: "Belajar Back-End Pemula dengan Javascript",
+    description: "",
+    image: backendJavascript,
+  },
+];
 
 const Training: React.FC = () => {
   return (
@@ -20,15 +92,15 @@ const Training: React.FC = () => {
       ></video>
 
       <div className="relative z-10">
-      <h2 className="text-5xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
-        <LiaCertificateSolid className="text-5xl text-blue-600" /> {/* Add icon with styling */}
-        Certificates
-      </h2>
+        <h2 className="text-5xl font-semibold mb-8 text-center text-white flex items-center justify-center gap-2">
+          <LiaCertificateSolid className="text-5xl text-blue-600" /> {/* Add icon with styling */}
+          Certificates
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {trainingData.map((training) => (
             <div
               key={training.id}
-              className="relative bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-lg rounded-lg p-6 transition transform hover:scale-105 hover:shadow-2xl"
+              className="relative bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-lg rounded-lg p-6 transition transform hover:scale-100 hover:shadow-2xl"
             >
               {/* Certificate Image */}
               <div className="relative overflow-hidden rounded-md mb-4">
