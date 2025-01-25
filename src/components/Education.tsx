@@ -31,6 +31,9 @@ const Education: React.FC = () => {
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-blue-500 rounded-full h-4 w-4"></div>
                   <h4 className="text-xl font-semibold">University of Nusa Cendana</h4>
                   <span className="text-gray-400">2020 - 2024</span>
+                  <br />
+                  <span className="text-gray-400">GPA : 3.82</span>
+
                   <p className="mt-2 text-gray-300">
                     Study various aspects of computer science, including algorithms, data structures, software engineering, web programming, and computer networks.
                   </p>
