@@ -90,7 +90,7 @@ const Biography: React.FC = () => {
               </span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl mb-8">
-              Graduated with a Bachelor's degree in Computer Science from Nusa Cendana University in 2020. Possesses programming and web development skills using various languages and frameworks.
+              Graduated with a Bachelor's degree in Computer Science from Nusa Cendana University. Possesses programming and web development skills using various languages and frameworks.
             </p>
 
             <p className="text-base sm:text-lg md:text-xl mb-8 text-gray-300">
