@@ -13,6 +13,7 @@ import Education from './components/Education';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen'; // Import the LoadingScreen component
+import NewPortfolioDialog from './components/NewPortfolioDialog';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -136,6 +137,9 @@ const App: React.FC = () => {
       </motion.div>
 
       <Footer />
+
+      {/* Tells visitors this site is deprecated and links to the new portfolio */}
+      <NewPortfolioDialog />
 
       {/* Toast notifications container */}
       <ToastContainer />
